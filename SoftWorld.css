@@ -5,14 +5,14 @@
 		padding: 10px 20px;
 		}
 	
-		.logo {
+		.navbar a .logo {
 		color: white;
 		font-size: 57px;
 		font-weight: bold;
 		margin-right: 30px;
 		}
 		
-		#action {
+		.navbar a {
 		color: white;
 		font-weight: bold;
 		text-decoration: none;
