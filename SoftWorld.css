@@ -1,0 +1,36 @@
+		.navbar {
+		background-color: #1a5678;
+		display: flex;
+		align-items: center;
+		padding: 10px 20px;
+		}
+	
+		.logo {
+		color: white;
+		font-size: 57px;
+		font-weight: bold;
+		margin-right: 30px;
+		}
+		
+		.navbar a {
+		color: white;
+		font-weight: bold;
+		text-decoration: none;
+		margin-right: 20px;
+		font-size: 27px;
+		}
+	
+		#search {
+		margin-left: auto;
+		padding: 5px;
+		font-size:16px;
+		}
+	
+		.bottom-bar {
+		background-color: #1a5678;
+		color: white;
+		text-align: center;
+		padding: 15px;
+		font-size: 20px;
+		margin-top: 20px;
+		}
