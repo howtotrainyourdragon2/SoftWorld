@@ -26,11 +26,14 @@
 		padding: 15px;
 		font-size: 20px;
 		margin-top: 20px;
-		min-height: 100vh;
 		}
 
 		.page-container {
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+		}
+
+		.content {
+		flex: 1;
 		}
