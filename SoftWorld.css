@@ -121,13 +121,6 @@
 	cursor: pointer;
 	}
 
-	.seth {
-	font-family: 'Segoe UI', sans-serif;
-	margin: 0;
-	padding: 20px;
-	background-color: #f4f4f4;
-	}
-
 	.product-container {
 	display: flex;
 	gap: 40px;
