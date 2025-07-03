@@ -36,7 +36,7 @@
 	margin-left: auto;
 	display: flex;
 	align-items: center;
-	gap: 10px; /* spacing between button and search bar */
+	gap: 10px;
 	}
 	
 	.cart-button {
@@ -53,7 +53,7 @@
 	}
 
 	.cart-button:hover {
-	  background-color: #e0e0e0;
+	background-color: #e0e0e0;
 	}
 
 	#search {
