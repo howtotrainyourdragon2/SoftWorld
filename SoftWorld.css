@@ -117,3 +117,7 @@
 	.card-footer {
 	margin-top: auto;
 	}
+
+	.Pics a {
+	cursor: pointer;
+	}
