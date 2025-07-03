@@ -198,7 +198,7 @@
 	display: inline-block;
 	}
 
-	.add-to-cart {
+	.add-to-cart2 {
 	padding: 10px 20px;
 	background-color: #00796B;
 	color: white;
@@ -209,6 +209,6 @@
 	transition: background-color 0.3s;
 	}
 
-	.add-to-cart:hover {
+	.add-to-cart2:hover {
 	background-color: #005f56;
 	}
