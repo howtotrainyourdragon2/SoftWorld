@@ -32,7 +32,253 @@
 	</div>
 
 	<div class="content">
-	<p text-align="center"><h1>ORDER FORM</h1> </p>
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px 0;
+            box-sizing: border-box; 
+        }
+
+        
+        .form-container {
+            width: 600px; 
+            background-color: #fff;
+            border: 2px solid #add8e6; 
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px; 
+        }
+
+       
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: #333;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            font-style: italic;
+            color: #666;
+        }
+
+        .form-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; 
+        }
+
+        
+        .left-column {
+            flex: 1;
+            min-width: 250px; 
+            padding-right: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-group label {
+            width: 120px;
+            margin-right: 10px;
+            text-align: right; 
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="tel"],
+        .form-group input[type="number"],
+        .form-group input[type="password"] {
+            flex: 1; 
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+       
+        .right-column {
+            flex: 0 0 150px; 
+            display: flex;
+            flex-direction: column;
+            gap: 10px; 
+            padding-left: 20px;
+            border-left: 1px solid #eee; 
+            align-items: flex-start; 
+        }
+
+        .size-label {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .size-box {
+            width: 100px; 
+            height: 30px; 
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+
+        
+        .purchase-button-container {
+            text-align: right;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+
+        .purchase-button {
+            background-color: #007bff; 
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .purchase-button:hover {
+            background-color: #0056b3;
+        }
+
+       
+        .footer {
+            width: 600px; 
+            text-align: right;
+            padding: 10px 0;
+        }
+
+        .feedback-button {
+            background-color: #6c757d;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .feedback-button:hover {
+            background-color: #5a6268;
+        }
+
+       
+        @media (max-width: 768px) {
+            .form-container, .footer {
+                width: 90%;
+                padding: 15px;
+            }
+            .form-content {
+                flex-direction: column;
+            }
+            .left-column {
+                padding-right: 0;
+            }
+            .right-column {
+                margin-top: 20px;
+                padding-left: 0;
+                border-left: none;
+                align-items: stretch;
+            }
+            .right-column .size-box {
+                width: 100%;
+            }
+            .form-group label {
+                width: auto;
+                text-align: left;
+                margin-bottom: 5px;
+                margin-right: 0;
+            }
+            .form-group {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .footer {
+                text-align: center; 
+            }
+            .feedback-button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="header">
+            <h1>ORDER FORM</h1>
+            <p>"Order product name"</p>
+        </div>
+
+        <div class="form-content">
+            <div class="left-column">
+                <div class="form-group">
+                    <label for="fullName">full Name:</label>
+                    <input type="text" id="fullName" name="fullName">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address">
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">phone number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber">
+                </div>
+                <div class="form-group">
+                    <label for="apartmentUnit">apartment/ unit:</label>
+                    <input type="text" id="apartmentUnit" name="apartmentUnit">
+                </div>
+                <div class="form-group">
+                    <label for="postalCode">Postal Code:</label>
+                    <input type="number" id="postalCode" name="postalCode">
+                </div>
+                <div class="form-group">
+                    <label for="cardDetails">Card details :</label>
+                    <input type="password" id="cardDetails" name="cardDetails" placeholder="**** **** **** ****">
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="size-label">size</div>
+                <div class="size-box"></div>
+                <div class="size-box"></div>
+                <div class="size-box"></div>
+                <div class="size-box"></div>
+            </div>
+        </div>
+
+        <div class="purchase-button-container">
+            <button type="submit" class="purchase-button">Purchase</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <button type="button" class="feedback-button">Feedback</button>
+    </div>
+</body>
 	</div>
 
 	<div class="bottom-bar">
