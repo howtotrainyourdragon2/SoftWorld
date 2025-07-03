@@ -33,7 +33,81 @@
 	</div>
 
 	<div class="content">
-	( ADD THINGS IN BETWEEN HERE NOWHERE ELSE, delete after use aaaaaaaaaaaaaaaaaaa)
+
+	<div class="product-container">
+
+		<div class="carousel">
+			<img id="product-image" src="https://howtotrainyourdragon2.github.io/SoftWorld/SharkMain.png" alt="Shark Image">
+			<div class="carousel-controls">
+				<button onclick="prevImage()">&lt;</button>
+				<button onclick="nextImage()">&gt;</button>
+			</div>
+		</div>
+		
+	<div class="details">
+	<h2>IKEA Shark</h2>
+		<div class="price2">$12.99</div>
+		<div class="description">
+			Made with comfortable materials, including embroidered eyes.
+			It is a 99x23x54 cm 0.67kg soft toy that's the shape of a shark.
+			Made of a 100% fabric and a 100% polyester filling.
+			Washing instructions: Machine wash, max 40°C, mild process.
+			Do not bleach. Tumble drying, low temperature (max 60°C). Do not iron. Do not dry-clean. 
+		</div>
+
+	<div class="quantity-section">
+		<button onclick="decreaseQty()">-</button>
+		<span id="quantity">1</span>
+		<button onclick="increaseQty()">+</button>
+	</div>
+
+	<button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+	</div>
+	</div>
+
+<script>
+const images = ["https://howtotrainyourdragon2.github.io/SoftWorld/SharkMain.png",
+		"https://howtotrainyourdragon2.github.io/SoftWorld/Shark.png",
+		"https://howtotrainyourdragon2.github.io/SoftWorld/Shark2.png"];
+let currentImage = 0;
+
+function updateImage() {
+document.getElementById("product-image").src = images[currentImage];
+}
+
+function prevImage() {
+currentImage = (currentImage - 1 + images.length) % images.length;
+updateImage();
+}
+
+function nextImage() {
+currentImage = (currentImage + 1) % images.length;
+updateImage();
+}
+
+let quantity = 1;
+
+function updateQtyDisplay() {
+document.getElementById("quantity").textContent = quantity;
+}
+
+function increaseQty() {
+quantity++;
+updateQtyDisplay();
+}
+
+function decreaseQty() {
+if (quantity > 1) {
+quantity--;
+updateQtyDisplay();
+}
+}
+
+function addToCart() {
+alert(`Added ${quantity} IKEA Shark(s) to cart!`);
+}
+</script>
+		
 	</div>
 
 	<div class="bottom-bar">
