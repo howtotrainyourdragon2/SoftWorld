@@ -60,16 +60,11 @@
 			</div>
 		</div>
 <script>
-function addToCart(Monkey) {
-alert(`OUT OF STOCK`);
-}
-	
-function addToCart(Capy) {
-alert(`Added Capybara to cart!`);
-}
-	
-function addToCart(Shark) {
-alert(`Added IKEA Shark(s) to cart!`);
+function addToCart(prductName) {
+if (productName === 'Monkey') {
+	alert('OUT OF STOCK');
+} else {
+	alert('Added{productName} to cart!');
 }
 </script>
 	</div>
