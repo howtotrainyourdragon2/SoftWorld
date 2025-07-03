@@ -215,3 +215,14 @@
 	.add-to-cart2:hover {
 	background-color: #005f56;
 	}
+
+	.out-of-stock {
+	height: 60vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 48px;
+	font-weight: bold;
+	color: #b00020;
+	text-align: center;
+	}
