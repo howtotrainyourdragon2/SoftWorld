@@ -37,7 +37,7 @@
 				<img src="https://howtotrainyourdragon2.github.io/SoftWorld/SharkMain.png" alt="IKEA Shark"></a>
 				<div class="product-name">IKEA Shark <span class="price">- $12.99</span></div>
 				<div class="card-footer">
-					<button class="add-to-cart">Add to Cart</button>
+					<button class="add-to-cart" onclick="addToCart3()">Add to Cart</button>
 				</div>
 			</div>
 
@@ -46,7 +46,7 @@
 				<img src="https://howtotrainyourdragon2.github.io/SoftWorld/CapyMain.png" alt="Capybara"></a>
 				<div class="product-name">Capybara <span class="price">- $9.99</span></div>
 				<div class="card-footer">
-					<button class="add-to-cart">Add to Cart</button>
+					<button class="add-to-cart" onclick="addToCart2()">Add to Cart</button>
 				</div>
 			</div>
 
@@ -60,11 +60,17 @@
 			</div>
 		</div>
 <script>
-
+function addToCart3() {
+alert(`OUT OF STOCK`);
+}
+	
+function addToCart2() {
+alert(`Added ${quantity} Capybara(s) to cart!`);
+}
+	
 function addToCart() {
 alert(`Added ${quantity} IKEA Shark(s) to cart!`);
 }
-	
 </script>
 	</div>
 
