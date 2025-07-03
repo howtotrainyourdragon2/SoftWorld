@@ -15,6 +15,7 @@
 	
 </head>
 <body>
+
 <div class="page-container">
 
 	<div class="navbar">
@@ -32,7 +33,79 @@
 	</div>
 
 	<div class="content">
-	( ADD THINGS IN BETWEEN HERE NOWHERE ELSE, delete after use aaaaaaaaaaaaaaaaaaa)
+
+	<div class="product-container">
+
+		<div class="carousel">
+			<img id="product-image" src="https://howtotrainyourdragon2.github.io/SoftWorld/CapyMain.png" alt="Shark Image">
+			<div class="carousel-controls">
+				<button onclick="prevImage()">&lt;</button>
+				<button onclick="nextImage()">&gt;</button>
+			</div>
+		</div>
+		
+	<div class="details">
+	<h2>Capybara</h2>
+		<div class="price2">$9.99</div>
+		<div class="description">
+			It is an 8x10x13cm in 3 different size 22.86 cm, 33cm and 43cm.
+			It is made with high-quality plush fabric, filled with pp cotton.
+			The natural eco-friendly plush cotton and filling give you better skin touch feeling.
+			It has a green turtle backpack on its back, looks unique, and is a sweet gift for kid, friend and family.
+		</div>
+
+	<div class="quantity-section">
+		<button onclick="decreaseQty()">-</button>
+		<span id="quantity">1</span>
+		<button onclick="increaseQty()">+</button>
+	</div>
+
+	<button class="add-to-cart2" onclick="addToCart()">Add to Cart</button>
+	</div>
+	</div>
+
+<script>
+const images = ["https://howtotrainyourdragon2.github.io/SoftWorld/CapyMain.png",
+		"https://howtotrainyourdragon2.github.io/SoftWorld/Capy.jpg",
+		"https://howtotrainyourdragon2.github.io/SoftWorld/Capy2.jpg"];
+let currentImage = 0;
+
+function updateImage() {
+document.getElementById("product-image").src = images[currentImage];
+}
+
+function prevImage() {
+currentImage = (currentImage - 1 + images.length) % images.length;
+updateImage();
+}
+
+function nextImage() {
+currentImage = (currentImage + 1) % images.length;
+updateImage();
+}
+
+let quantity = 1;
+
+function updateQtyDisplay() {
+document.getElementById("quantity").textContent = quantity;
+}
+
+function increaseQty() {
+quantity++;
+updateQtyDisplay();
+}
+
+function decreaseQty() {
+if (quantity > 1) {
+quantity--;
+updateQtyDisplay();
+}
+}
+
+function addToCart() {
+alert(`Added ${quantity} Capybara(s) to cart!`);
+}
+</script>
 	</div>
 
 	<div class="bottom-bar">
