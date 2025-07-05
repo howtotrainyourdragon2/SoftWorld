@@ -231,11 +231,11 @@
 	color: #004172;
 	}
 
-        .odd {
+        tr.odd {
 	background-color: #004172;
 	}
 
-        .even {
+        tr.even {
 	background-color: #0694ff;
 	}
 
