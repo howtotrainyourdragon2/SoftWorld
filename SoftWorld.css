@@ -230,13 +230,11 @@
         .caption {
 	color: #004172;
 	}
-
         .odd {
-	background-color: #004172;
+	color: #004172;
 	}
-
         .even {
-        background-color: #0694ff
+	color: #0694ff;
 	}
 
 
