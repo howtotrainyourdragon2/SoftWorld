@@ -238,8 +238,8 @@
 	}
 
        .round {
-	border: 15px solid;
-	border-radius: 100px;
+	border: 100px solid;
+	border-radius: 10px;
        }
 
 
