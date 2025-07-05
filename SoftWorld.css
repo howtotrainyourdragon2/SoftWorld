@@ -231,12 +231,10 @@
 	color: #004172;
 	}
 
-        tr.odd {
-	background-color: #004172;
-	}
-
-        tr.even {
-	background-color: #0694ff;
+        .table{
+	font-size: 40px;
+	font-weight: bold;
+	color:#FFFFFF;
 	}
 
 
