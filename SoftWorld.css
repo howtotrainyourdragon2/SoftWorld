@@ -249,6 +249,7 @@ table {
   border: 2px solid #333;
   border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 4px 8px #dddddd;
 }
 
 td {
@@ -272,6 +273,7 @@ tr:last-child td:first-child {
 tr:last-child td:last-child {
   border-bottom-right-radius: 12px;
 }
+
 
 
 
