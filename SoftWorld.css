@@ -243,16 +243,15 @@
        }
 
 
- .oph {
+table {
   border-collapse: separate;
   border-spacing: 0;
   border: 2px solid #333;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 12px #000000;
 }
 
-.ophelia {
+td {
   padding: 10px;
   border: 1px solid #ccc;
 }
