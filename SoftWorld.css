@@ -289,3 +289,11 @@ tr:last-child td:last-child {
 	box-shadow: 0 4px 8px;
 	transition: all 0.3s ease;
        }
+.form-container {
+            width: 600px; 
+            background-color: #fff;
+            border: 2px solid #add8e6; 
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px; 
+        }
