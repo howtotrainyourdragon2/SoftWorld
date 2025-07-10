@@ -310,27 +310,4 @@ tr:last-child td:last-child {
             gap: 1px;
             padding-left: 20px;
         }
-.form-group {
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-        }
 
-        .form-group label {
-            width: 120px; 
-            margin-right: 10px;
-            text-align: right; 
-            font-weight: bold;
-            color: #555;
-        }
-
-        .form-group input[type="text"],
-        .form-group input[type="tel"],
-        .form-group input[type="number"],
-        .form-group input[type="password"] {
-            flex: 1; 
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
