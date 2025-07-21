@@ -316,7 +316,7 @@ border-bottom-right-radius: 12px;
             padding: 20px;
         }
 
-        .content {
+        .zhiyicontent {
             background-color: #fff;
             border-radius: 20px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -326,7 +326,7 @@ border-bottom-right-radius: 12px;
             position: relative;
         }
 
-        h1 {
+        zhiyih1 {
             color: #333;
             font-size: 32px;
             margin-bottom: 40px;
@@ -335,7 +335,7 @@ border-bottom-right-radius: 12px;
             letter-spacing: 2px;
         }
 
-        .page {
+        .zhiyipage {
             display: none;
             animation: slideIn 0.5s ease-in-out;
         }
