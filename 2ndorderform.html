@@ -1,0 +1,49 @@
+<html> 
+  <body>
+  <div class="zhiyipage" id="page2">
+            <div align="center">
+                <h1>ORDER FORM</h1>
+                <div class="form-container">
+                    <form id="orderForm">
+                        <table border="0" class="zhiyitable">
+                            <tr>
+                                <td>	
+                                    <label for="fullName">Full Name:</label>
+                                    <input type="text" id="fullName" name="fullName" required>
+                                </td>
+                                <td>
+                                    <label for="address">Address:</label>
+                                    <input type="text" id="address" name="address" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>     
+                                    <label for="apartmentUnit">Apartment/Unit:</label>
+                                    <input type="text" id="apartmentUnit" name="apartmentUnit">
+                                </td>  
+                                <td>
+                                    <label for="postalCode">Postal Code:</label>
+                                    <input type="number" id="postalCode" name="postalCode" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>	
+                                    <label for="cardDetails">Card Details:</label>
+                                    <input type="password" id="cardDetails" name="cardDetails" placeholder="**** **** **** ****" required>
+                                </td> 
+                                <td>
+                                    <label for="phoneNumber">Phone Number:</label>
+                                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <button type="button" class="back-button" onclick="prevPage()">Back to Summary</button>
+                        
+                        <div align="right">
+                            <button type="submit" class="purchase-button">Purchase</button>
+                            <button type="button" class="feedback-button" onclick="showFeedback()">Feedback</button>
+                        </div> 
+                    </form>
+                /body>
+    </html>
