@@ -30,51 +30,176 @@
 			<input id="search" type="text" placeholder="Search">
 		</div>
 	</div>
+        <div class="page active" id="page1">
+            <div align="center">
+                <h1>ORDER FORM</h1>
+                
+                <div class="product-section">
+                    <div class="product-name">Premium Capybara</div>
+                    <div class="product-description">
+                   Capybara Soft toy.
+                    </div>
+                    <div class="product-price" id="productPrice">$9.99</div>
+                    
+                    <div class="quantity-selector">
+                        <span>Quantity:</span>
+                        <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+                        <span class="quantity-display" id="quantity">1</span>
+                        <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+                    </div>
+                </div>
 
-	<div class="content">
-	  <div align="center">
-            <h1>ORDER FORM</h1>
-            <div class="form-container">
-		<table border="0">
-			<tr>
-			 <td>	
-                    <label for="fullName">full Name:</label>
-                    <input type="text" id="fullName" name="fullName"> </br>
-		         </td>
-			 <td>
-		    <label for="address">Address:</label>
-                    <input type="text" id="address" name="address"> </br>
-			</td>
-		       </tr>
-		       <tr>
-			<td>     
-                    <label for="apartmentUnit">apartment/ unit:</label>
-                    <input type="text" id="apartmentUnit" name="apartmentUnit"></br>
-		       </td>  
-			<td>
-		    <label for="postalCode">Postal Code:</label>
-                    <input type="number" id="postalCode" name="postalCode"></br>
-			</td>
-		       </tr>
-		       <td>	
-                    <label for="cardDetails">Card details :</label>
-                    <input type="password" id="cardDetails" name="cardDetails" placeholder="**** **** **** ****"></br>
-		      </td> 
-                      <td>
-                    <label for="phoneNumber">phone number:</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber"> </br></br>
-		     </td>
-		    </tr>
-		</table>
-		 <div align="right">
-		<button type="submit" class="purchase-button">Purchase</button>
+                <div class="order-summary">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$9.99</span>
+                    </div>
+                   
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="total">$9.99</span>
+                    </div>
+                </div>
+
+                <button class="next-button" onclick="nextPage()">Proceed to Details</button>
+            </div>
+        </div>
+
+        <div class="page" id="page2">
+            <div align="center">
+                <h1>ORDER FORM</h1>
+                <div class="form-container">
+                    <form id="orderForm">
+                        <table border="0">
+                            <tr>
+                                <td>	
+                                    <label for="fullName">Full Name:</label>
+                                    <input type="text" id="fullName" name="fullName" required>
+                                </td>
+                                <td>
+                                    <label for="address">Address:</label>
+                                    <input type="text" id="address" name="address" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>     
+                                    <label for="apartmentUnit">Apartment/Unit:</label>
+                                    <input type="text" id="apartmentUnit" name="apartmentUnit">
+                                </td>  
+                                <td>
+                                    <label for="postalCode">Postal Code:</label>
+                                    <input type="number" id="postalCode" name="postalCode" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>	
+                                    <label for="cardDetails">Card Details:</label>
+                                    <input type="password" id="cardDetails" name="cardDetails" placeholder="**** **** **** ****" required>
+                                </td> 
+                                <td>
+                                    <label for="phoneNumber">Phone Number:</label>
+                                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <button type="button" class="back-button" onclick="prevPage()">Back to Summary</button>
+                        
+                        <div align="right">
+                            <button type="submit" class="purchase-button">Purchase</button>
+                            <button type="button" class="feedback-button" onclick="showFeedback()">Feedback</button>
+                        </div> 
+                    </form>
+
+                    <div class="success-message" id="successMessage">
+                        🎉 Order confirmed successfully! You will receive a confirmation email shortly.
+                        <br><br>
+                        <span id="orderNumber"></span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let quantity = 1;
+        const basePrice = 9.99;
+
+        function changeQuantity(change) {
+            quantity = Math.max(1, quantity + change);
+            document.getElementById('quantity').textContent = quantity;
+            updateSummary();
+        }
+
+        function updateSummary() {
+            const subtotal = basePrice * quantity;
+            const tax = subtotal * taxRate;
+            const total = subtotal + shippingCost + tax;
+
+            document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;
+            document.getElementById('tax').textContent = `$${tax.toFixed(2)}`;
+            document.getElementById('total').textContent = `$${total.toFixed(2)}`;
+        }
+
+        function nextPage() {
+            document.getElementById('page1').classList.remove('active');
+            document.getElementById('page2').classList.add('active');
+            document.getElementById('pageIndicator').textContent = 'Page 2 of 2';
+        }
+
+        function prevPage() {
+            document.getElementById('page2').classList.remove('active');
+            document.getElementById('page1').classList.add('active');
+            document.getElementById('pageIndicator').textContent = 'Page 1 of 2';
+        }
+
+        function showFeedback() {
+            alert('Thank you for your interest in providing feedback! Please contact us at feedback@company.com');
+        }
+
         
-	        
-		  <button type="button" class="feedback-button">Feedback</button>
-		 </div> 
-	  </div>  
-	 </div>	
-	</div>
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            
+         
+            });
+
+            if (isValid) {
+                // Hide form and show success message
+                document.querySelector('form').style.display = 'none';
+                document.getElementById('successMessage').style.display = 'block';
+                
+                // Generate order number
+                setTimeout(() => {
+                    const orderNum = 'ORD-' + Math.random().toString(36).substr(2, 9).toUpperCase();
+                    document.getElementById('orderNumber').textContent = `Order #${orderNum}`;
+                }, 1000);
+            } else {
+                alert('Please fill in all required fields.');
+            }
+        });
+
+        
+        document.getElementById('cardDetails').addEventListener('focus', function(e) {
+            e.target.type = 'text';
+            e.target.placeholder = '1234 5678 9012 3456';
+        });
+
+        document.getElementById('cardDetails').addEventListener('blur', function(e) {
+            if (e.target.value) {
+                e.target.type = 'password';
+                e.target.placeholder = '**** **** **** ****';
+            }
+        });
+
+        document.getElementById('cardDetails').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\s+/g, '').replace(/[^0-9]/gi, '');
+            let formattedValue = value.match(/.{1,4}/g)?.join(' ') || '';
+            e.target.value = formattedValue;
+        });
+    </script>
+
 
 	<div class="bottom-bar">
 		Softest Toys In The World
