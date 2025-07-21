@@ -306,16 +306,7 @@ border-bottom-right-radius: 12px;
 	margin-left: 20px;
 }
 
-  body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
+ 
         .zhiyicontent {
             background-color: #fff;
             border-radius: 20px;
@@ -326,14 +317,7 @@ border-bottom-right-radius: 12px;
             position: relative;
         }
 
-        zhiyih1 {
-            color: #333;
-            font-size: 32px;
-            margin-bottom: 40px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
+   
 
         .zhiyipage {
             display: none;
