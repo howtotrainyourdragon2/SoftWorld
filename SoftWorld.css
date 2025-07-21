@@ -305,3 +305,177 @@ border-bottom-right-radius: 12px;
 	background-color: #f9f9f9;
 	margin-left: 20px;
 }
+
+  body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 700px;
+            padding: 40px;
+            position: relative;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 40px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .page {
+            display: none;
+            animation: slideIn 0.5s ease-in-out;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .product-section {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 2px solid #e9ecef;
+        }
+
+        .product-name {
+            font-size: 24px;
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            color: #6c757d;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .product-price {
+            font-size: 28px;
+            font-weight: bold;
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .quantity-btn {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: #667eea;
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .quantity-btn:hover {
+            background: #5a6fd8;
+            transform: scale(1.1);
+        }
+
+        .quantity-display {
+            font-size: 18px;
+            font-weight: 600;
+            min-width: 40px;
+            text-align: center;
+        }
+
+        .order-summary {
+            background: #e8f5e8;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .summary-row.total {
+            font-weight: bold;
+            font-size: 20px;
+            color: #28a745;
+            border-top: 2px solid #28a745;
+            padding-top: 10px;
+            margin-top: 15px;
+        }
+
+      
+
+        .zhiyitable {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 20px 25px;
+        }
+
+        .zhiyitd {
+            vertical-align: top;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #495057;
+            font-size: 14px;
+            text-transform: capitalize;
+        }
+
+        input[type="text"], 
+        input[type="number"], 
+        input[type="password"], 
+        input[type="tel"] {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            background: white;
+        }
