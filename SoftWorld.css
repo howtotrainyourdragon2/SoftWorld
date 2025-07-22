@@ -487,4 +487,11 @@ border-bottom-right-radius: 12px;
 	margin-bottom: 30px;
 	color: #666;
 }
-
+.contact-form{
+	display: grid;
+	gap: 20px;
+}
+.form-group{
+	display: flex;
+	flex-direction: collum;
+}
