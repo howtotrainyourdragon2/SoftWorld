@@ -495,3 +495,10 @@ border-bottom-right-radius: 12px;
 	display: flex;
 	flex-direction: collum;
 }
+.contact-form label{
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #555
+}
+.{
+
