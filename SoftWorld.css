@@ -21,6 +21,7 @@
 	font-size: 20px;
 	}
 
+
 	.page-container {
 	display: flex;
 	flex-direction: column;
@@ -476,4 +477,14 @@ border-bottom-right-radius: 12px;
 	border-radius:10px
 }
 
+.contact-container h1{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.contact-container p{
+	text-align: center;
+	margin-bottom:30px;
+	color:#666;
+}
 
