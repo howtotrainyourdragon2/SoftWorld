@@ -530,7 +530,7 @@ border-bottom-right-radius: 12px;
 
 .slider-wrapper{
 	position: relative;
-	max-width: 48rem;
+	max-width: 768px;
 	margin: 0 auto;
 }
 
@@ -540,4 +540,7 @@ border-bottom-right-radius: 12px;
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 	scroll-behaviour: smooth;
+	box-shadow: 0px 24px 48px -12px #00000040;
+	border-radius: 8px;
+}
 	
