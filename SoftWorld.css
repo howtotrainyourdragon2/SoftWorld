@@ -559,5 +559,18 @@ border-bottom-right-radius: 12px;
 	transform: translateX(-50%);
 	z-index: 1;
 }
+
+.slide-nav a{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
 	
 	
