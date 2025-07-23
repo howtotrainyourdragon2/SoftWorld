@@ -543,4 +543,10 @@ border-bottom-right-radius: 12px;
 	box-shadow: 0px 24px 48px -12px #00000040;
 	border-radius: 8px;
 }
+
+.slider img{
+	flex: 1 0 100%
+	scroll-snap-align: start;
+	object-fit:cover;
+}
 	
