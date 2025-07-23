@@ -519,7 +519,10 @@ border-bottom-right-radius: 12px;
 	font-size: 20px;
 }
 .thank-you{ 
-        border: 2px solid #078556;
+        border: 1px solid #078556;
 	border-collapse: collapse;
+	color:#078556;
+	background-color: #bdffbd
+	
 }
 	
