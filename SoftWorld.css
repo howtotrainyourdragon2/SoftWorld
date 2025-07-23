@@ -572,5 +572,19 @@ border-bottom-right-radius: 12px;
 .slider-nav a:hover {
 	opacity: 1;
 }
+
+.about-us{ 
+	width: 50%;
+	float: left;
+	margin-top: 55px;
+}
+
+.about-us h1{
+	width: 475px;
+	text-align: left;
+	font-size: 40px;
+	color:#004172
+}
+	
 	
 	
