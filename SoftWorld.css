@@ -588,8 +588,9 @@ border-bottom-right-radius: 12px;
 
 .about-us p{
 	width: 475px;
-	text-align: justify
+	text-align: justify;
 	margin-top: 18px;
+	font-size: 18px;
 }
 	
 .about-us button{
