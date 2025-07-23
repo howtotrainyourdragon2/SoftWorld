@@ -583,7 +583,7 @@ border-bottom-right-radius: 12px;
 	width: 475px;
 	text-align: left;
 	font-size: 40px;
-	color:#004172
+	color:#FFFF
 }
 
 .about-us p{
@@ -593,14 +593,6 @@ border-bottom-right-radius: 12px;
 	font-size: 18px;
 }
 	
-.about-us button{
-	font-size: 18px;
-	margin-top: 25px;
-	background-color: #004172;
-	color: #FFFF;
-	padding: 9px 20px;
-	border-radius: 20px;
-}
 
 .yak-table{
 	background-color: #004172;
@@ -613,7 +605,7 @@ border-bottom-right-radius: 12px;
 }
 
 .about-us{
-	border: 2px
+	border: 2px;
 	border-radius: 12px;
 	background-color: #004172;
 	color: #FFFF;
