@@ -533,3 +533,11 @@ border-bottom-right-radius: 12px;
 	max-width: 48rem;
 	margin: 0 auto;
 }
+
+.slider{
+	display: flex;
+	aspect-ratio: 16/9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behaviour: smooth;
+	
