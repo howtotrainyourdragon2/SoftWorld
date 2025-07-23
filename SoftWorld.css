@@ -118,8 +118,11 @@
 	margin-top: auto;
 	}
 
-	.Pics a {
+	#Pics a {
 	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+	display: block;
 	}
 
 	.product-container {
