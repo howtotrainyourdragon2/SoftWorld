@@ -522,7 +522,8 @@ border-bottom-right-radius: 12px;
         border: 1px solid #078556;
 	border-collapse: collapse;
 	color:#078556;
-	background-color: #bdffbd
+	background-color: #bdffbd;
+	border-width: 5px 2px 3px 1px
 	
 }
 	
