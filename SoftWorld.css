@@ -601,4 +601,16 @@ border-bottom-right-radius: 12px;
 	padding: 9px 20px;
 	border-radius: 20px;
 }
+
+.yak-table{
+	background-color: #004172;
+	color: #FFFF;
+	border-collapse: separate;
+        border-spacing: 0;
+        box-shadow: 0px 8px 12px #000000;
+        border-radius: 12px;
+        overflow: hidden;
+}
+	
+	
 	
