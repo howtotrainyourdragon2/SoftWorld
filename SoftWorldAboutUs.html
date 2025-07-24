@@ -8,22 +8,20 @@
 		margin: 0;
 		padding: 0;
 		}
-		@keyframes appear{
-			from{
-			opacity: 0;
-			scale: 0.5s;
-			}
-			to{
-			opacity: 1;
-			scale: 1;
-			}
-			.content{
-			animations: appear liner;
-			animation-timeline: view();
-			animation-range: 0% cover
-			30%
-		}
-	
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.content {
+  animation: appear 1s linear forwards;
+}
 	</style>
 	
 	<link href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorld.css" rel="stylesheet"/>
