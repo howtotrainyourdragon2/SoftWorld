@@ -134,5 +134,16 @@
 	</div>
 
 </div>
+	<script>
+  window.addEventListener('scroll', function () {
+    const content = document.querySelector('.content');
+    const position = content.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (position < windowHeight - 100) {
+      content.classList.add('show');
+    }
+  });
+</script>
 </body>
 </html>	
