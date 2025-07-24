@@ -19,12 +19,14 @@
   }
 }
 
+/* Hidden before scroll */
 .content {
   opacity: 0;
   transform: translateY(30px) scale(0.95);
   transition: all 0.7s ease-out;
 }
 
+/* Visible after scroll */
 .content.show {
   opacity: 1;
   transform: translateY(0) scale(1);
@@ -53,7 +55,7 @@
 	</div>
 
 	<div class="content">
-<div class="slider-wrapper">
+<div class="slider-wrapper content">
 	<div class="slider">
 		
 		<img id="slide-1" src="https://howtotrainyourdragon2.github.io/SoftWorld/SharkMain.png" alt="IKEA Shark"/>
@@ -66,7 +68,7 @@
 		<a href="slide-3"></a>
 	</div>
 </div>
-        <div class="about-us">
+        <div class="about-us content">
 		<h1>About Us</h1>
 		<p>Our company, Soft World, is which date back to 16 June 2025. 
 		Offers customers a range of soft toys and our main target customers are kids aged from 3-12. 
@@ -84,7 +86,7 @@
 	</div>
 
 
-		<table class="reviews">
+		<table class="reviews content">
 <caption><h1>Customers Reviews</h1></caption>
 		<tr>
 		<td><img id="review1"src="review1.png"></td>
@@ -94,7 +96,7 @@
 		</table>
 			
 
-		<table class = "ophe" border="0" align="right" cellpadding="50" >
+		<table class = "ophe content" border="0" align="right" cellpadding="50" >
 	<caption class="caption"><h1>Contact us</h1></caption>
 		<tr  class="oph" bgcolor="#004172">
 			<td>email address</td>
@@ -116,7 +118,7 @@
 		
 	</table>
 
-<table class="yak-table" border="1" align="left" cellpading: "100">
+<table class="yak-table content" border="1" align="left" cellpading: "100">
 	<caption><h1>Founders</h1></caption>
 <tr>
 	<td>Cheam Zhi Yi</td>
@@ -134,15 +136,23 @@
 	</div>
 
 </div>
-	<script>
-  window.addEventListener('scroll', function () {
-    const content = document.querySelector('.content');
-    const position = content.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
+<script>
+  const contents = document.querySelectorAll('.content');
 
-    if (position < windowHeight - 100) {
-      content.classList.add('show');
-    }
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        // Stop observing once shown
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  contents.forEach(content => {
+    observer.observe(content);
   });
 </script>
 </body>
