@@ -611,11 +611,10 @@ border-bottom-right-radius: 12px;
 }
 
 .about-us {
-  border: 2px solid #000;
   border-radius: 12px;
   background-color: #004172;
   color: #fff;
-  margin-left: 100px;
+  margin-left: 70px;
   margin-right: 20px;
 }
 
