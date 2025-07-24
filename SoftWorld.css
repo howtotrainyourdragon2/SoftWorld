@@ -581,16 +581,14 @@ border-bottom-right-radius: 12px;
 
 .about-us h1{
 	width: 475px;
-	text-align: left;
+	text-align: center;
 	font-size: 40px;
 	color:#FFFF
 }
 
 .about-us p{
 	width: 475px;
-	text-align: justify;
-	margin-top: 18px;
-	margin-right: 50px;
+	text-align: center;
 	font-size: 18px;
 	
 }
