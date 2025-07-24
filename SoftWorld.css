@@ -628,7 +628,14 @@ border-bottom-right-radius: 12px;
 	color: #004172;
 }
 	
-.review{
-border-radius: 15px
+.review1{
+border-radius: 15px;
+}
+
+.review2{
+border-radius: 20px;
+}
+.review3{
+border-radius: 15px;
 }
 	
