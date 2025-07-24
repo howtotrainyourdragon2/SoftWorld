@@ -630,14 +630,14 @@ border-bottom-right-radius: 12px;
 	color: #004172;
 }
 	
-.review1{
+#review1{
 border-radius: 15px;
 }
 
-.review2{
+#review2{
 border-radius: 20px;
 }
-.review3{
+#review3{
 border-radius: 15px;
 }
 	
