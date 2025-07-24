@@ -17,17 +17,18 @@
     opacity: 1;
     transform: translateY(0) scale(1);
   }
-@scroll-timeline appearTimeline {
-  source: view();           /* follows viewport */
-  orientation: block;
-  scroll-offsets: auto 50%;
 }
+
 .content {
-  animation-name: appear;
-  animation-duration: 1s;
-  animation-timeline: appearTimeline;
-  animation-fill-mode: both;
-  animation-timing-function: ease-out;
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  transition: all 0.7s ease-out;
+}
+
+.content.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  animation: appear 1s ease-out forwards;
 }
 	</style>
 	
