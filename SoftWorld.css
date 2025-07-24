@@ -596,17 +596,17 @@ border-bottom-right-radius: 12px;
 }
 	
 
-.yak-table{
-	background-color: #FFFF;
-	color: #004172;
-	border-collapse: separate;
-        border-spacing: 0;
-        box-shadow: 0px 8px 12px #000000;
-        border-radius: 12px;
-	border: 3px solid  #004172
-        overflow: hidden;
-	align: left
-        margin-right: 40px
+.yak-table {
+  background-color: #fff;
+  color: #004172;
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: 0px 8px 12px #000000;
+  border-radius: 12px;
+  border: 3px solid #004172;
+  overflow: hidden;
+  margin-left: 100px;
+  margin-right: 20px; 
 }
 
 .about-us {
