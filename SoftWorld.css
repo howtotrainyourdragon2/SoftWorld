@@ -614,6 +614,12 @@ border-bottom-right-radius: 12px;
 	margin-right: 50px
 }
 
+.about-us button{
+	color: #FFFF;
+	margin-right: 15px;
+	margin-top: 15px;
+}
+
 .yak-table caption{
 	color: #004172;
 }
