@@ -518,18 +518,21 @@ border-bottom-right-radius: 12px;
 }
 
 
-.submit{
-	background-color: #004171;
-	color: #FFFF;
-	padding: 16px;
-	font-size: 20px;
-	transition: transform 0.3s;
+.submit {
+  background-color: #004171;
+  color: #FFFF;
+  padding: 16px;
+  font-size: 20px;
+  width: 200px; /* set desired length */
+  transition: transform 0.3s;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
-
-.submit:hover {
-	transform: translateY(-10px);
-	background-color: var(--clr-accent);
-	color: var(--clr-light);
+.submit {
+  display: inline-block;
+  text-decoration: none;
 }
 .thank-you{ 
         border: 1px solid #078556;
