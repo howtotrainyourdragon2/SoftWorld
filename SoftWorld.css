@@ -600,8 +600,9 @@ border-bottom-right-radius: 12px;
 
 .about-us p{
 	width: 475px;
-	text-align: center;
 	font-size: 18px;
+        margin-left: 70px;
+        margin-right: 20px;
 	
 }
 	
