@@ -518,10 +518,10 @@ border-bottom-right-radius: 12px;
 
 
 .submit{
-	padding: 16px;
-	font-size: 20px;
 	background-color: #004171;
 	color: #FFFF;
+	padding: 16px;
+	font-size: 20px;
 	transition: transform 0.3s;
 }
 
