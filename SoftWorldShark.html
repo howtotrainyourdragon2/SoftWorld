@@ -35,76 +35,109 @@
 	<div class="content">
 
 	<div class="product-container">
-
 		<div class="carousel">
-			<img id="product-image" src="https://howtotrainyourdragon2.github.io/SoftWorld/SharkMain.png" alt="Shark Image">
-			<div class="carousel-controls">
-				<button onclick="prevImage()">&lt;</button>
-				<button onclick="nextImage()">&gt;</button>
-			</div>
-		</div>
-		
-	<div class="details">
-	<h2>IKEA Shark</h2>
-		<div class="price2">$12.99</div>
-		<div class="description">
-			Made with comfortable materials, including embroidered eyes.
-			It is a 99x23x54 cm 0.67kg soft toy that's the shape of a shark.
-			Made of a 100% fabric and a 100% polyester filling.
-			Washing instructions: Machine wash, max 40°C, mild process.
-			Do not bleach. Tumble drying, low temperature (max 60°C). Do not iron. Do not dry-clean. 
+			<img id="product-image" class="product-image" src="https://howtotrainyourdragon2.github.io/SoftWorld/SharkMain.png" alt="Shark Image">
+			<div class="dots" id="dots"></div>
 		</div>
 
-	<div class="quantity-section">
+		<div class="details">
+			<h2>IKEA Shark</h2>
+			<div class="price">$12.99</div>
+			<div class="description">
+			Made with comfortable materials such as 100% fabric and a 100% polyester filling. Amazing soft toy for your kid.
+   		</div>
+
+		<div class="care-section">
+			<button onclick="toggleCare()" class="care-toggle">How to care ▼</button>
+		<div id="care-info" style="display: none; margin-top: 5px;">
+			Washing instructions: Machine wash, max 40°C, mild process. Do not bleach. Tumble drying, low temperature (max 60°C). Do not iron. Do not dry-clean.
+		</div>
+	</div>
+
+    <div class="quantity-section">
 		<button onclick="decreaseQty()">-</button>
 		<span id="quantity">1</span>
 		<button onclick="increaseQty()">+</button>
-	</div>
+    </div>
 
-	<button class="add-to-cart2" onclick="addToCart()">Add to Cart</button>
-	</div>
-	</div>
+		<button class="add-to-cart2" onclick="addToCart()">Add to Cart</button>
+  </div>
+
+  <div class="reviews">
+    <h3>⭐ Reviews</h3>
+    <div class="review">
+		<strong>🧑 John D.</strong><br>
+		“Very soft and cute! Worth the money.”<br>★★★★☆
+    </div>
+    <div class="review">
+		<strong>👩‍🦰 Sarah K.</strong><br>
+		“Bought this for my kid, they love it!”<br>★★★★★
+    </div>
+    <div class="review">
+		<strong>🧒 Mark T.</strong><br>
+		“Expected it to be bigger but still nice.”<br>★★★☆☆
+    </div>
+  </div>
+</div>
 
 <script>
-const images = ["https://howtotrainyourdragon2.github.io/SoftWorld/SharkMain.png",
-		"https://howtotrainyourdragon2.github.io/SoftWorld/Shark.png",
-		"https://howtotrainyourdragon2.github.io/SoftWorld/Shark2.png"];
+const images = [
+	"https://howtotrainyourdragon2.github.io/SoftWorld/SharkMain.png",
+	"https://howtotrainyourdragon2.github.io/SoftWorld/Shark.png",
+	"https://howtotrainyourdragon2.github.io/SoftWorld/Shark2.png"
+];
 let currentImage = 0;
 
 function updateImage() {
-document.getElementById("product-image").src = images[currentImage];
+	document.getElementById("product-image").src = images[currentImage];
+	const dots = document.getElementById("dots").children;
+	for (let i = 0; i < dots.length; i++) {
+	dots[i].classList.toggle("active-dot", i === currentImage);
+  }
+}
+function goToImage(index) {
+	currentImage = index;
+	updateImage();
+}
+function autoSlide() {
+	currentImage = (currentImage + 1) % images.length;
+	updateImage();
+}
+setInterval(autoSlide, 3000);
+
+window.onload = function () {
+	const dotContainer = document.getElementById("dots");
+	images.forEach((_, i) => {
+	const dot = document.createElement("span");
+    dot.className = "dot";
+    dot.onclick = () => goToImage(i);
+    dotContainer.appendChild(dot);
+  });
+	updateImage();
+};
+
+function toggleCare() {
+	const care = document.getElementById("care-info");
+	care.style.display = care.style.display === "none" ? "block" : "none";
 }
 
-function prevImage() {
-currentImage = (currentImage - 1 + images.length) % images.length;
-updateImage();
-}
-
-function nextImage() {
-currentImage = (currentImage + 1) % images.length;
-updateImage();
-}
 
 let quantity = 1;
-
 function updateQtyDisplay() {
-document.getElementById("quantity").textContent = quantity;
+	document.getElementById("quantity").textContent = quantity;
 }
-
 function increaseQty() {
-quantity++;
-updateQtyDisplay();
+	quantity++;
+	updateQtyDisplay();
 }
-
 function decreaseQty() {
-if (quantity > 1) {
-quantity--;
-updateQtyDisplay();
+	if (quantity > 1) {
+	quantity--;
+	updateQtyDisplay();
+  }
 }
-}
-
 function addToCart() {
-alert(`Added ${quantity} IKEA Shark(s) to cart!`);
+	alert(`Added ${quantity} IKEA Shark(s) to cart!`);
 }
 </script>
 	</div>
