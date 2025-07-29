@@ -35,40 +35,51 @@
 	<div class="content">
 
 	<div class="product-container">
-
 		<div class="carousel">
-			<img id="product-image" src="https://howtotrainyourdragon2.github.io/SoftWorld/CapyMain.png" alt="Shark Image">
-			<div class="carousel-controls">
-				<button onclick="prevImage()">&lt;</button>
-				<button onclick="nextImage()">&gt;</button>
-			</div>
-		</div>
-		
-	<div class="details">
-	<h2>Capybara</h2>
-		<div class="price2">$9.99</div>
-		<div class="description">
-			It is an 8x10x13cm in 3 different size 22.86 cm, 33cm and 43cm.
-			It is made with high-quality plush fabric, filled with pp cotton.
-			The natural eco-friendly plush cotton and filling give you better skin touch feeling.
-			It has a green turtle backpack on its back, looks unique, and is a sweet gift for kid, friend and family.
+			<img id="product-image" class="product-image" src="https://howtotrainyourdragon2.github.io/SoftWorld/SharkMain.png" alt="Shark Image">
+			<div class="dots" id="dots"></div>
 		</div>
 
-	<div class="quantity-section">
+		<div class="details">
+			<h2>IKEA Shark</h2>
+			<div class="price">$12.99</div>
+			<div class="description">
+			Made with comfortable materials such as 100% fabric and a 100% polyester filling. Amazing soft toy for your kid.
+   		</div>
+
+		<div class="care-section">
+			<button onclick="toggleCare()" class="care-toggle">How to care ▼</button>
+		<div id="care-info" style="display: none; margin-top: 5px;">
+			Washing instructions: Machine wash, max 40°C, mild process. Do not bleach. Tumble drying, low temperature (max 60°C). Do not iron. Do not dry-clean.
+		</div>
+	</div>
+
+    <div class="quantity-section">
 		<button onclick="decreaseQty()">-</button>
 		<span id="quantity">1</span>
 		<button onclick="increaseQty()">+</button>
+    </div>
 
-		<select class="options">
-			<option>22.86cm</option>
-			<option>33cm</option>
-			<option>43cm</option>	
-		</select>
-	</div>
+		<button class="add-to-cart2" onclick="addToCart()">Add to Cart</button>
+  </div>
 
-	<button class="add-to-cart2" onclick="addToCart()">Add to Cart</button>
-	</div>
-	</div>
+  <div class="reviews">
+    <h3>⭐ Reviews</h3>
+    <div class="review">
+		<strong>🧑 JunKang K.</strong><br>
+		“Horrible.”<br>★☆☆☆☆
+    </div>
+    <div class="review">
+		<strong>👩‍🦰 Jesse T.</strong><br>
+		“Bought this for my kid, they love it!”<br>★★★★★
+    </div>
+    <div class="review">
+		<strong>🧒 Javen H.</strong><br>
+		“Expected it to be as big as my bed.”<br>★★★☆☆
+    </div>
+  </div>
+</div>
+
 
 <script>
 const images = ["https://howtotrainyourdragon2.github.io/SoftWorld/CapyMain.png",
@@ -77,17 +88,36 @@ const images = ["https://howtotrainyourdragon2.github.io/SoftWorld/CapyMain.png"
 let currentImage = 0;
 
 function updateImage() {
-document.getElementById("product-image").src = images[currentImage];
+	document.getElementById("product-image").src = images[currentImage];
+	const dots = document.getElementById("dots").children;
+	for (let i = 0; i < dots.length; i++) {
+	dots[i].classList.toggle("active-dot", i === currentImage);
+  }
 }
-
-function prevImage() {
-currentImage = (currentImage - 1 + images.length) % images.length;
-updateImage();
+function goToImage(index) {
+	currentImage = index;
+	updateImage();
 }
+function autoSlide() {
+	currentImage = (currentImage + 1) % images.length;
+	updateImage();
+}
+setInterval(autoSlide, 3000);
 
-function nextImage() {
-currentImage = (currentImage + 1) % images.length;
-updateImage();
+window.onload = function () {
+	const dotContainer = document.getElementById("dots");
+	images.forEach((_, i) => {
+	const dot = document.createElement("span");
+    dot.className = "dot";
+    dot.onclick = () => goToImage(i);
+    dotContainer.appendChild(dot);
+  });
+	updateImage();
+};
+
+function toggleCare() {
+	const care = document.getElementById("care-info");
+	care.style.display = care.style.display === "none" ? "block" : "none";
 }
 
 let quantity = 1;
