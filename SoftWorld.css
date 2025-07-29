@@ -523,11 +523,9 @@ border-bottom-right-radius: 12px;
   color: #FFFF;
   padding: 16px;
   font-size: 20px;
-  width: 200px; /* set desired length */
+  width: auto;
   transition: transform 0.3s;
   text-align: center;
-  border: none;
-  border-radius: 8px;
   cursor: pointer;
 }
 .submit {
