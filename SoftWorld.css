@@ -555,18 +555,22 @@ border-bottom-right-radius: 12px;
         height: 200px;
 }
 
-
-#submit{
-		height: auto;
+.submit{
+	height: auto;
 	width: auto;
         background-color: #004172;
-		color: #FFFF;
-		border: none;
-		align-content: center;
+	color: #FFFF;
+	border: none;
+	align-content: center;
 	border-radius: 15px;
 	
 	
 }
+
+	.submit:hover {
+	background-color: #FFFF;
+	color: #004172;
+	}
 
 .thank-you{ 
         border: 1px solid #078556;
