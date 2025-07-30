@@ -569,6 +569,7 @@ border-bottom-right-radius: 12px;
 	.submit:hover {
 	background-color: #FFFF;
 	color: #004172;
+	transform: translateY(-2px); 
 	}
 
 .thank-you{ 
