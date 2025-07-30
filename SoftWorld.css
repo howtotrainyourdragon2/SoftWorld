@@ -574,11 +574,15 @@ border-bottom-right-radius: 12px;
 	}
 
 .thank-you{ 
-        border: 1px solid #078556;
-	border-collapse: collapse;
+font-size: 20px;
+border-radius: 10px;
+width:500px;
+height:auto;
+border: 3px solid #078556;
+margin-right: 190px;
+margin-left: 150px;
 	color:#078556;
 	background-color: #bdffbd;
-	border-width: 5px 2px 3px 1px
 	
 }
 
