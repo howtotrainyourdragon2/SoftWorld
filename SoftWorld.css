@@ -578,7 +578,7 @@ border-bottom-right-radius: 12px;
 
 .slider-wrapper{
 	position: relative;
-	max-width: 1300px;
+	max-width: auto;
 	margin: 0 auto;
 }
 
