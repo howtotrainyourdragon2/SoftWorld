@@ -1,86 +1,129 @@
 <html>
 <head>
-	<title>Soft World</title>
-	<style>
-		body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		}
-	</style>
+    <title>Soft World - Products</title>
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 	
-	<link href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorld.css" rel="stylesheet"/>
+    <link href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorld.css" rel="stylesheet"/>
 </head>
 <body>
 <div class="page-container">
-
-	<div class="navbar">
-		<a style="color: white; font-size: 57px; font-weight: bold; margin-right: 30px;"
-		href="https://howtotrainyourdragon2.github.io/SoftWorld/index.html">SW</a>
-		<a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldProduct.html">Products</a>
-		<a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldContactUs.html">Contact Us</a>
-		<a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldAboutUs.html">About Us</a>
-
-		<div class="nav-right">
-			<a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldCart.html">
-			<div class="cart-button">Cart</div></a>
-			<input id="search" type="text" placeholder="Search">
-		</div>
-	</div>
-
-	<div class="content">
-		<h1 style="text-align: center; margin-top: 40px; font-family: seoge UI, san-serif;">Soft World</h1>
-
-		<div class="products">
-
-			<a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldShark.html" id="Pics">
-				<div class="product-card">
-					<img src="https://howtotrainyourdragon2.github.io/SoftWorld/SharkMain.png" alt="IKEA Shark">
-					<div class="product-name">IKEA Shark <span class="price">- $12.99</span></div>
-					<div class="card-footer">
-						  <button class="add-to-cart" onclick="event.preventDefault(); event.stopPropagation(); addToCart('IKEA Shark')">Add to Cart</button>
-					</div>
-				</div>
-			</a>
-
-			<a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldCapy.html" id="Pics">
-				<div class="product-card">
-					<img src="https://howtotrainyourdragon2.github.io/SoftWorld/CapyMain.png" alt="Capybara">
-					<div class="product-name">Capybara <span class="price">- $9.99</span></div>
-					<div class="card-footer">
-						  <button class="add-to-cart" onclick="event.preventDefault(); event.stopPropagation(); addToCart('Capybara')">Add to Cart</button>
-					</div>
-				</div>
-			</a>
-			
-			<a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldMonkey.html" id="Pics">
-				<div class="product-card">
-					<img src="https://howtotrainyourdragon2.github.io/SoftWorld/MonkeyMain.jpg" alt="Monkey">
-					<div class="product-name">Monkey <span class="price">- $14.50</span></div>
-					<div class="card-footer">
-						 <button class="add-to-cart" onclick="event.preventDefault(); event.stopPropagation(); addToCart('Monkey')">Add to Cart</button>
-					</div>
-				</div>
-			</a>
-		</div>
-
-	</div>
-
-	<div class="bottom-bar">
-		Softest Toys In The World
-	</div>
-
+    <div class="navbar">
+        <a style="color: white; font-size: 57px; font-weight: bold; margin-right: 30px;"
+        href="SoftWorldProduct.html">SW</a>
+        <a href="SoftWorldProduct.html">Products</a>
+        <a href="SoftWorldContactUs.html">Contact Us</a>
+        <a href="SoftWorldAboutUs.html">About Us</a>
+    
+        <div class="nav-right">
+            <a href="SoftWorldCart.html" class="cart-button">
+                Cart<span id="cart-badge" class="cart-badge hidden">0</span>
+            </a>
+            <input id="search" type="text" placeholder="Search">
+        </div>
+    </div>
+    
+    <div class="content">
+        <h1 style="text-align: center; margin-top: 40px; font-family: 'Segoe UI', sans-serif;">Soft World</h1>
+        <div class="products">
+            <a href="SoftWorldShark.html" id="Pics">
+                <div class="product-card">
+                    <img src="https://howtotrainyourdragon2.github.io/SoftWorld/SharkMain.png" alt="IKEA Shark">
+                    <div class="product-name">IKEA Shark <span class="price">- $12.99</span></div>
+                    <div class="card-footer">
+                        <button class="add-to-cart" onclick="event.preventDefault(); event.stopPropagation(); addToCart('IKEA Shark', 12.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="SoftWorldCapy.html" id="Pics">
+                <div class="product-card">
+                    <img src="https://howtotrainyourdragon2.github.io/SoftWorld/CapyMain.png" alt="Capybara">
+                    <div class="product-name">Capybara <span class="price">- $9.99</span></div>
+                    <div class="card-footer">
+                        <button class="add-to-cart" onclick="event.preventDefault(); event.stopPropagation(); addToCart('Capybara', 9.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="SoftWorldMonkey.html" id="Pics">
+                <div class="product-card">
+                    <img src="https://howtotrainyourdragon2.github.io/SoftWorld/MonkeyMain.jpg" alt="Monkey">
+                    <div class="product-name">Monkey <span class="price">- $14.50</span></div>
+                    <div class="card-footer">
+                        <button class="add-to-cart" onclick="event.preventDefault(); event.stopPropagation(); addToCart('Monkey', 14.50, true)">Add to Cart</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <div class="bottom-bar">
+        Softest Toys In The World
+    </div>
 </div>
-	
+
 <script>
-function addToCart(productName) {
-if (productName === 'Monkey') {
-alert('OUT OF STOCK');
-} else {
-alert(`Added ${productName} to cart!`);
+const products = {
+    'IKEA Shark': { price: 12.99, description: 'Soft and cuddly IKEA shark plush toy', outOfStock: false },
+    'Capybara': { price: 9.99, description: 'Adorable capybara soft toy', outOfStock: false },
+    'Monkey': { price: 14.50, description: 'Playful monkey plush toy', outOfStock: true }
+};
+
+function getCart() {
+    const cartData = localStorage.getItem('softWorldCart');
+    return cartData ? JSON.parse(cartData) : {};
 }
+
+function saveCart(cart) {
+    localStorage.setItem('softWorldCart', JSON.stringify(cart));
 }
+
+function addToCart(productName, price, outOfStock = false) {
+    if (outOfStock) {
+        alert('OUT OF STOCK');
+        return;
+    }
+    
+    let cart = getCart();
+    
+    if (cart[productName]) {
+        cart[productName].quantity += 1;
+    } else {
+        cart[productName] = {
+            price: price,
+            quantity: 1,
+            description: products[productName].description
+        };
+    }
+    
+    saveCart(cart);
+    updateCartBadge();
+    alert(`Added ${productName} to cart!`);
+}
+
+function updateCartBadge() {
+    const cart = getCart();
+    const totalItems = Object.values(cart).reduce((sum, item) => sum + item.quantity, 0);
+    const badge = document.getElementById('cart-badge');
+    
+    if (totalItems > 0) {
+        badge.textContent = totalItems;
+        badge.classList.remove('hidden');
+    } else {
+        badge.classList.add('hidden');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    updateCartBadge();
+});
 </script>
-	
+
 </body>
-</html>	
+</html>
