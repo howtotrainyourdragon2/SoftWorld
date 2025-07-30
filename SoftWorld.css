@@ -700,6 +700,7 @@ input:focus {
     color: #004172;
     margin-right: 15px;
     margin-top: 15px;
+    border-radius: 10px;
 }
 
 .yak-table {
