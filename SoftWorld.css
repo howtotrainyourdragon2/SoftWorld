@@ -556,8 +556,8 @@ border-bottom-right-radius: 12px;
 }
 
 .submit{
-	height: auto;
-	width: 30px;
+	height: 45px;
+	width: auto;
         background-color: #004172;
 	color: #FFFF;
 	border: none;
