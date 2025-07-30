@@ -556,13 +556,14 @@ border-bottom-right-radius: 12px;
 }
 
 
-.submit {
-        background-color: #004172
-        color: #FFFF;
-	align: center;
+#submit {
+		height: auto;
+	width: auto;
+        background-color: #004172;
+		color: #FFFF;
+		border: none;
+		align-content: center;
 	border-radius: 15px;
-	height: auto;
-	width: auto
 	
 	
 }
