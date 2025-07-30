@@ -561,6 +561,8 @@ border-bottom-right-radius: 12px;
         color: #FFFF;
 	align: center;
 	border-radius: 15px;
+	height: auto;
+	width: auto
 	
 	
 }
