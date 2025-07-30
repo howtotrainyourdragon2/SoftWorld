@@ -557,7 +557,7 @@ border-bottom-right-radius: 12px;
 
 .submit{
 	height: auto;
-	width: auto;
+	width: 30px;
         background-color: #004172;
 	color: #FFFF;
 	border: none;
