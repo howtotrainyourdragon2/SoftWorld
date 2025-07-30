@@ -558,14 +558,12 @@ border-bottom-right-radius: 12px;
 .submit{
 	height: 45px;
 	width: auto;
-        background-color: #004172;
+	background-color: #004172;
 	color: #FFFF;
 	border: none;
 	align-content: center;
 	border-radius: 15px;
-	transition: tansform 0.3s;
-	
-	
+	transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
 	.submit:hover {
@@ -574,7 +572,7 @@ border-bottom-right-radius: 12px;
 	}
 
 .thank-you{ 
-align-item: center
+align-item: center;
 font-size: 20px;
 border-radius: 10px;
 width:500px;
