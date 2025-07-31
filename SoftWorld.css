@@ -679,18 +679,19 @@ border-bottom-right-radius: 12px;
 .about-us button{
 	height: 45px;
 	width: auto;
-	background-color: #004172;
-	color: #FFFF;
+	background-color: #FFFF;
+	color: #004172;
 	border: none;
 	align-content: center;
 	border-radius: 15px;
+	text-align: center;
 	transition: transform 0.3s, background-color 0.3s, color 0.3s;
 
 }
 
 .about-us button:hover {
-	background-color: #FFFF;
-	color: #004172;
+	background-color:  #004172;
+	color: #FFFF;
 	transform: translateY(-2px); 
 	}
 
