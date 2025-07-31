@@ -872,3 +872,58 @@ border-radius: 15px;
 .hidden {
     display: none;
 }
+
+.register-2 {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin: auto;
+  color: #004172;
+  text-align: center;
+  font-size: 25px;
+}
+
+.register table {
+  margin: auto;
+  color: #004172;
+  font-size: 22px;
+  font-weight: bold;
+  border-color:#ADD8E6;
+}
+
+.register input[type="text"],
+.register input[type="date"] {
+  width: 200px;
+  padding: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+#yak{
+	height: 30;
+	width: 50;
+    background-color: #ADD8E6;
+	color: #004172;
+	border: none;
+	align-content: center;
+	border-radius: 50%;
+	font-size: 10px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+	
+
+
+#yak2{
+		height: 50;
+	width: 1000;
+        background-color: #ADD8E6;
+		color: #004172;
+		border: none;
+		align-content: center;
+	border-radius: 15px;
+	margin-top: 20px;
+	font-size: 25px;
+}
