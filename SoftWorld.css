@@ -931,3 +931,23 @@ border-radius: 15px;
 	margin-top: 20px;
 	font-size: 25px;
 }
+
+.xuan{
+	color: #004172;
+	background-color:  #ADD8E6;
+	box-shadow: 0 4px 10px #004172;
+	width: 300;
+	height: 70;
+	text-align: center;
+	
+}
+
+.press{
+	color:#004172;
+	background-color:  #FFFF;
+	padding: 15px;
+	border-radius: 30px;
+	border-color:#004172;
+	font-size: 10px;
+	font-weight: bold;
+}
