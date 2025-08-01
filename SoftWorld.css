@@ -546,7 +546,9 @@ border-bottom-right-radius: 12px;
 .contact-form label{
 	font-weight: bold;
 	color: #004172;
+margin-right: 15px;
 }
+
 
 .contact-form text{
 	background-color: #F1F1F1;
