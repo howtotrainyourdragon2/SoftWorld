@@ -547,6 +547,11 @@ border-bottom-right-radius: 12px;
 	font-weight: bold;
 	color: #004172;
 }
+
+.contact-form text{;
+	background-color: #F1F1F1;
+}
+
 .contact-form input, .contact-form textarea{
 	padding: 10px;
 	border:1px solid #ccc;
