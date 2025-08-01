@@ -938,7 +938,6 @@ background-color: #F1F1F1;
 #yak2{
 	height: 50;
 	width: 1000;
-        background-color: #ADD8E6;
 	color: #004172;
 	border: none;
 	align-content: center;
@@ -950,7 +949,6 @@ background-color: #F1F1F1;
 
 #yak2:hover {
 	background-color: #004172;
-	color: #ADD8E6;
 	transform: translateY(-2px); 
 	}
 
@@ -1003,6 +1001,5 @@ background-color: #F1F1F1;
          margin-right: 30px;
 	margin-bottom: 90px;
 	color: #004172;
-	background-color:  #ADD8E6;
 	box-shadow: 0 4px 10px #004172;
 }
