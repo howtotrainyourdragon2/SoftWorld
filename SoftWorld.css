@@ -733,7 +733,7 @@ border-radius: 15px;
 	max-width: 35%;
 	 margin-left: 15px;
          margin-right: 30px;
-	margin-top: 66px;
+	margin-bottom: 66px;
 	  box-shadow: 0 4px 10px #004172;
 }
 
@@ -982,3 +982,14 @@ background-color: #F1F1F1;
 	color: #FFFF;
 	transform: translateY(-2px); 
 	}
+
+
+#shark-us{
+	border-radius: 12px;
+	float: right;
+	max-width: 35%;
+	 margin-left: 15px;
+         margin-right: 30px;
+	margin-bottom: 100px;
+	  box-shadow: 0 4px 10px #004172;
+}
