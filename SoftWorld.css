@@ -526,6 +526,7 @@ border-bottom-right-radius: 12px;
 .contact-container h1{
 	text-align: center;
 	margin-bottom: 10px;
+	color: #004172;
 }
 
 .contact-container p{
@@ -566,7 +567,6 @@ border-bottom-right-radius: 12px;
 	border: none;
 	align-content: center;
 	border-radius: 15px;
-	box-shadow: 0px 4px 8px #FFFF;
 	transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
