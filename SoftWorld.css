@@ -964,12 +964,9 @@ background-color: #F1F1F1;
 	color: #004172;
 	background-color:  #ADD8E6;
 	box-shadow: 0 4px 10px #004172;
-	width: 300;
+	width: 400;
 	height: 70;
-	text-align: center;
-	margin-left: 80px;
-	margin-bottom: 100px;
-	
+	text-align: center;	
 }
 
 .press{
@@ -980,8 +977,6 @@ background-color: #F1F1F1;
 	border-color:#004172;
 	font-size: 10px;
 	font-weight: bold;
-	margin-left: 50px;
-	margins-bottom: 100px;
 	transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
