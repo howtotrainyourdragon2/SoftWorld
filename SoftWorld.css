@@ -550,7 +550,7 @@ margin-right: 15px;
 }
 
 
-.contact-form text{
+.contact-form input, .contact-form text{
 	background-color: #F1F1F1;
 }
 
