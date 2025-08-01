@@ -72,7 +72,11 @@
 		      <td><input type ="text" placeholder= "eg.12345678" size="50"/></td>
 	      </tr>
 	      <tr>
-			<td>Pictures:</td> <td><input type ="file" id = "usertoypic" placeholder= "Put pictures for your product!" accept ="image/*" size="50"/><img id="preview" alt="Image Preview"></td>
+				<div class="image-upload-container">
+					<input type="file" id="usertoypic" accept="image/*"/>
+					<img id="preview" alt="Image Preview">
+					<button type="button" id="changeImageBtn" class="change-image-btn">Change Image</button>
+				</div>
 		</tr>
 		<tr>
 			<td>Reason:</td> <td><textarea col = "30" row = "10" placeholder = "Write what Happen to the Toy" > </textarea></td>
@@ -87,11 +91,47 @@
 	
     </form>
 	<script>
-		let preview = document.getElementById("preview");
-		let usertoypic = document.getElementById("usertoypic");
-		usertoypic.onchange = function(){
-			usertoypic.src = URL.createObjectURL(usertoypic.files[0]);
-		}
+	<script>
+		const preview = document.getElementById("preview");
+		const usertoypic = document.getElementById("usertoypic");
+		const changeImageBtn = document.getElementById("changeImageBtn");
+		
+		usertoypic.addEventListener('change', function(event) {
+			const file = event.target.files[0];
+			
+			if (file && file.type.startsWith('image/')) {
+				const reader = new FileReader();
+				
+				reader.onload = function(e) {
+					preview.src = e.target.result;
+					preview.style.display = "block";
+					// Hide the file input and show change button
+					usertoypic.style.display = "none";
+					changeImageBtn.style.display = "block";
+				};
+				
+				reader.readAsDataURL(file);
+			} else {
+				preview.style.display = "none";
+				preview.src = "";
+			}
+		});
+		
+		// Change image button functionality
+		changeImageBtn.addEventListener('click', function() {
+			usertoypic.style.display = "block";
+			changeImageBtn.style.display = "none";
+			usertoypic.click(); // Open file dialog
+		});
+		
+		// Clean up when form is reset
+		document.querySelector('input[type="reset"]').addEventListener('click', function() {
+			preview.style.display = "none";
+			preview.src = "";
+			usertoypic.style.display = "block";
+			changeImageBtn.style.display = "none";
+			usertoypic.value = ""; // Clear the file input
+		});
 	</script>
 </div>
 </div>
