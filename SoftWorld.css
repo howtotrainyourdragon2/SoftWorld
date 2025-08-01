@@ -900,6 +900,7 @@ border-radius: 15px;
   color: #004172;
   text-align: center;
   font-size: 25px;
+ margin-top: 600px;
 }
 
 .register table {
@@ -908,6 +909,7 @@ border-radius: 15px;
   font-size: 22px;
   font-weight: bold;
   border-color:#ADD8E6;
+   
 }
 
 .register input[type="text"],
@@ -938,6 +940,7 @@ background-color: #F1F1F1;
 	height: 50;
 	width: 1000;
 	color: #004172;
+	background-color: #ADD8E6;
 	border: none;
 	align-content: center;
 	border-radius: 15px;
@@ -948,6 +951,7 @@ background-color: #F1F1F1;
 
 #yak2:hover {
 	background-color: #004172;
+	color:#ADD8E6;
 	transform: translateY(-2px); 
 	}
 
@@ -959,7 +963,7 @@ background-color: #F1F1F1;
 	height: 70;
 	text-align: center;
 	margin-left: 50px;
-	margins-bottom: 100px;
+	margin-bottom: 100px;
 	
 }
 
