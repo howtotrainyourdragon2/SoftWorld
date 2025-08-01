@@ -72,7 +72,7 @@
 		      <td><input type ="text" placeholder= "eg.12345678"/></td>
 	      </tr>
 	      <tr>
-			<td>Pictures:</td> <td><input type ="file" placeholder= "Put pictures for your product!"/></td>
+			<td>Pictures:</td> <td><input type ="file" id = "usertoypic" placeholder= "Put pictures for your product!"/></td>
 		</tr>
 		<tr>
 			<td>Reason:</td> <td><textarea col = "30" row = "10" placeholder = "Write what Happen to the Toy" > </textarea></td>
@@ -83,8 +83,15 @@
               
             </tr>
         </table>
+		
 	
     </form>
+	<script>
+		let usertoypic = document.getElementById("usertoypic");
+		usertoypic.onchange = function(){
+			usertoypic.src = URL.createObjectURL(usertoypic.files[0]);
+		}
+	</script>
 </div>
 </div>
 	 <div class="bottom-bar">
