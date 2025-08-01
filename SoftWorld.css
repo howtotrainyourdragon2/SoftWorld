@@ -283,8 +283,10 @@
   box-shadow: 0px 8px 12px #004172;
   border-radius: 12px;
   overflow: hidden;
-  float: right;
+  float: left;
  background-color: #ADD8E6;
+   margin-left: 50px;
+   margins-bottom: 100px;
 	
 }
 
@@ -965,7 +967,7 @@ background-color: #F1F1F1;
 	width: 300;
 	height: 70;
 	text-align: center;
-	margin-left: 50px;
+	margin-left: 80px;
 	margin-bottom: 100px;
 	
 }
