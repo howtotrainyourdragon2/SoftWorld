@@ -1012,7 +1012,7 @@ background-color: #F1F1F1;
 }
 
 
-.reviews-button{
+.review-button{
     display: inline-block;
     padding: 10px 20px;
     background-color: #004172;
@@ -1025,7 +1025,7 @@ text-align: center;
 transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
-.reviews-button:hover {
+.review-button:hover {
 	background-color:  #ADD8E6;
 	color: #004172;
 	transform: translateY(-2px); 
@@ -1061,6 +1061,7 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
 	background-color:#ADD8E6;
 }
 	
+
 
 
 
