@@ -1025,7 +1025,7 @@ text-align: center;
 transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
-.about-us button:hover {
+.reviews-button:hover {
 	background-color:  #ADD8E6;
 	color: #004172;
 	transform: translateY(-2px); 
@@ -1048,6 +1048,7 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
     background-color: #FFFF;
 	 color: #004172;
 }
+
 
 
 
