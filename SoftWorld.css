@@ -1055,9 +1055,12 @@ background-color: #F1F1F1;
     font-size: 16px;
     box-shadow: 0 4px 10px #004172;
 text-align: center;
-	float: right;
+	float: left;
+	margin-top: 400px;
+	
 transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
+
 
 
 
