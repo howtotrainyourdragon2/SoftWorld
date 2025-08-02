@@ -1030,7 +1030,7 @@ background-color: #F1F1F1;
 }
 	
 
-#capy-us{
+#capy-us animate-content{
 	float: right;
 	margin-bottom: 100px;
 	margin-left: 1000px;
@@ -1059,6 +1059,7 @@ text-align: center;
 	float: right;
 transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
+
 
 
 
