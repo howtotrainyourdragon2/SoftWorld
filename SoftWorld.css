@@ -736,6 +736,7 @@ border-radius: 15px;
 	float: left;
 	margin-left: 30px;
 	margin-right: 15px;
+	margin-top: 30px;
 	
 }
 #group-pic{
@@ -1011,14 +1012,24 @@ background-color: #F1F1F1;
 }
 
 
-.reviews button{
-	float: right;
-	padding: 20px;
-	border-radius: 15px;
-	background-color: white;
-	color: #004172;
-	box-shadow: 0 4px 10px #004172;
+.reviews-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #004172;
+    color: #ADD8E6;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 4px 10px #004172;
+text-align: center;
+transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
+
+.about-us button:hover {
+	background-color:  #ADD8E6;
+	color: #004172;
+	transform: translateY(-2px); 
+	}
 
 
 .homescreen-button {
@@ -1037,6 +1048,7 @@ background-color: #F1F1F1;
     background-color: #FFFF;
 	 color: #004172;
 }
+
 
 
 
