@@ -1034,13 +1034,18 @@ background-color: #F1F1F1;
 	float: right;
 	margin-bottom: 100px;
 	margin-left: 1000px;
+	max-width: 35px;
 }
+
 
 .review-button:hover {
 	background-color:  #ADD8E6;
 	color: #004172;
 	transform: translateY(-2px); 
 	}
+
+
+
 .review-button{
     display: inline-block;
     padding: 10px 20px;
@@ -1053,6 +1058,7 @@ background-color: #F1F1F1;
 text-align: center;
 transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
+
 
 
 
