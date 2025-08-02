@@ -1007,6 +1007,14 @@ background-color: #F1F1F1;
 }
 
 
+.reviews button{
+	float: right;
+	padding: 20px;
+	border-radius: 15px;
+	background-color: white;
+	color: #004172;
+	box-shadow: 0 4px 10px #004172;
+}
 
 
 
