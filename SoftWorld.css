@@ -1067,7 +1067,9 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
 #capy-us{
 	float: right;
 	margin-bottom: 100px;
+	margin-left: 1000px;
 }
+
 
 
 
