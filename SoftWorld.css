@@ -987,7 +987,6 @@ background-color: #F1F1F1;
 	max-width: 36%;
 	 margin-left: 15px;
          margin-right: 30px;
-	margin-bottom: 500px;
 	  box-shadow: 0 4px 10px #004172;
 }
 
@@ -1093,6 +1092,7 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
             margin: 0;
             line-height: 1.6;
         }
+
 
 
 
