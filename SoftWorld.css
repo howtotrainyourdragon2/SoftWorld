@@ -1043,7 +1043,7 @@ background-color: #F1F1F1;
 
 .review-button{
     display: inline-block;
-    padding: 10px 50px;
+    padding: 10px 90px;
     background-color: #004172;
     color: #ADD8E6;
     border-radius: 8px;
@@ -1083,6 +1083,7 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
             padding: 20px;
 	
         }
+
 
 
 
