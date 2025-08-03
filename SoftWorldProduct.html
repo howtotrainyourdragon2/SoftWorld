@@ -74,10 +74,16 @@ const products = {
     'Capybara': { price: 9.99, description: 'Adorable capybara soft toy', outOfStock: false },
     'Monkey': { price: 14.50, description: 'Playful monkey plush toy', outOfStock: true }
 };
+	
+function addToCart(productName, price, outOfStock = false) {
+	if (outOfStock) {
+	alert('OUT OF STOCK');
+	return;
+}
 
 function getCart() {
-    const cartData = localStorage.getItem('softWorldCart');
-    return cartData ? JSON.parse(cartData) : {};
+	const cartData = localStorage.getItem('softWorldCart');
+	return cartData ? JSON.parse(cartData) : {};
 }
 
 function saveCart(cart) {
@@ -121,5 +127,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </body>
 </html>
+
 
 
