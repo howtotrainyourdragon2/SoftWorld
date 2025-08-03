@@ -1045,19 +1045,17 @@ background-color: #F1F1F1;
 
 .review-button{
     display: inline-block;
-    padding: 10px 20px;
+    padding: 50px;
     background-color: #004172;
     color: #ADD8E6;
-    text-decoration: none;
     border-radius: 8px;
     font-size: 16px;
     box-shadow: 0 4px 10px #004172;
 text-align: center;
-	float: left;
-	margin-top: 400px;
-	
+	float: right;
 transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
+
 
 
 
