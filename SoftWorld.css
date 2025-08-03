@@ -1052,7 +1052,6 @@ background-color: #F1F1F1;
     border-radius: 8px;
     font-size: 16px;
     box-shadow: 0 4px 10px #004172;
-text-align: center;
 	float: right;
 transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
@@ -1068,6 +1067,7 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 	
 	
+
 
 
 
