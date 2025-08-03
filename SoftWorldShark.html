@@ -15,7 +15,7 @@
 	
 </head>
 <body>
-
+<div class="toast-container" id="toast-container"></div>
 <div class="page-container">
 
 	<div class="navbar">
@@ -289,12 +289,12 @@ function addToCart() {
     saveCart(cart);
     updateCartBadge();
 
-    alert(`Added ${quantity} ${productData.name}${quantity > 1 ? 's' : ''} to cart!`);
+    const message = `Added ${quantity} ${productData.name}${quantity > 1 ? 's' : ''} to cart!`;
+    showToast(message, 'success', 3000);
 
     quantity = 1;
     updateQtyDisplay();
 }
-
 function updateImage() {
     document.getElementById("product-image").src = images[currentImage];
     const dots = document.getElementById("dots").children;
@@ -344,6 +344,41 @@ window.onload = function () {
     updateQtyDisplay();
     updateCartBadge();
 };
+
+	function showToast(message, type = 'success', duration = 3000) {
+    const container = document.getElementById('toast-container');
+    
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
+    
+    const icon = type === 'error' ? '❌' : '✅';
+    toast.innerHTML = `
+        <span class="toast-icon">${icon}</span>
+        <span class="toast-message">${message}</span>
+        <button class="toast-close" onclick="removeToast(this.parentElement)">×</button>
+    `;
+    
+    container.appendChild(toast);
+    
+    setTimeout(() => {
+        toast.classList.add('show');
+    }, 10);
+    
+    setTimeout(() => {
+        removeToast(toast);
+    }, duration);
+}
+
+function removeToast(toast) {
+    if (toast && toast.parentElement) {
+        toast.classList.add('hide');
+        setTimeout(() => {
+            if (toast.parentElement) {
+                toast.parentElement.removeChild(toast);
+            }
+        }, 300);
+    }
+}
 </script>
 	</div>
 
