@@ -1058,7 +1058,7 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
 
 .side-us h3{
 	margin-top: 100px;
-	margin-right: 100px;
+	float: left;
 	color:#004172;
         background-color: #ADD8E6;
 	box-shadow: 0 4px 10px #004172;
@@ -1069,6 +1069,7 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 	
 	
+
 
 
 
