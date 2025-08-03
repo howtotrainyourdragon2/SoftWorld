@@ -1056,45 +1056,35 @@ max-width: auto;
 transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
-        .founders {
+.founders h1{
+	color:#004172;
+	background-color: #ADD8E6;
+	text-align: center;
+		box-shadow: 0 4px 10px #004172;
+}
+
+.founders-des{
+	color:#004172;
+	background-color: #ADD8E6;
+	padding: 30px;
+	font-size: 20px;
+	float: right;
+	font-weight: bold;
+	
+}
+
+.founders table{ 
+     float: right;
+	 margin-left: 500px;
+}
+
+.founders {
             clear: both;
             margin-top: 40px;
             padding: 20px;
-	float: right;
+	
         }
 
-        .founders h1 {
-            color: #004172;
-            background-color: #ADD8E6;
-            text-align: center;
-            box-shadow: 0 4px 10px #004172;
-            padding: 20px;
-            margin: 0 0 30px 0;
-            border-radius: 8px;
-	    max-width: auto
-        }
-
-        .founders-des {
-            color: #004172;
-            background-color: #ADD8E6;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px #004172;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .founders-des td {
-            padding: 20px;
-            vertical-align: top;
-            width: 50%;
-        }
-
-        .founders-des p {
-            margin: 0;
-            line-height: 1.6;
-        }
 
 
 
