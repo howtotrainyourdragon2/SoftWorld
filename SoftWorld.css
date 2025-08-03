@@ -1075,7 +1075,6 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
         .founders-des {
             color: #004172;
             background-color: #ADD8E6;
-            padding: 30px;
             font-size: 18px;
             font-weight: bold;
             border-radius: 12px;
@@ -1094,6 +1093,7 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
             margin: 0;
             line-height: 1.6;
         }
+
 
 
 
