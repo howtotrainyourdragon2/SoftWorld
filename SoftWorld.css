@@ -1068,21 +1068,20 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
 	padding: 30px;
 	font-size: 20px;
 	float: right;
-	font-weight: bold;
+	font-weight: bold
 	
 }
 
 .founders table{ 
      float: right;
-	 margin-left: 500px;
 }
 
 .founders {
             clear: both;
-            margin-top: 40px;
             padding: 20px;
 	
         }
+
 
 
 
