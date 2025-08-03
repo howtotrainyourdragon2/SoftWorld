@@ -32,10 +32,14 @@
 		</div>
 	</div>
 
-	<div class = "content">
-        <div class="page active" id="page1">
+	
             <div align="center">
                 <h1>CART</h1>
+
+          
+	<div class="bottom-bar">
+		Softest Toys In The World
+	</div>
 </body>
 
 </html>
