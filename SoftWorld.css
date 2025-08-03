@@ -1050,6 +1050,8 @@ background-color: #F1F1F1;
     font-size: 16px;
     box-shadow: 0 4px 10px #004172;
     float: right;
+    margin-left: 25;
+max-width: auto;
 transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
@@ -1093,3 +1095,4 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
             margin: 0;
             line-height: 1.6;
         }
+
