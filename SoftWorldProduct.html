@@ -84,12 +84,6 @@ function saveCart(cart) {
     localStorage.setItem('softWorldCart', JSON.stringify(cart));
 }
 
-function addToCart(productName, price, outOfStock = false) {
-    if (outOfStock) {
-        alert('OUT OF STOCK');
-        return;
-    }
-    
     let cart = getCart();
     
     if (cart[productName]) {
@@ -127,3 +121,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </body>
 </html>
+
