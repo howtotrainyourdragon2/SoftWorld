@@ -1069,29 +1069,61 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
 	text-align: center;
 	border-radius: 5px;
 }
-	
-	
-.founders h1{
-	color:#004172;
-	background-color: #ADD8E6;
-	text-align: center;
-		box-shadow: 0 4px 10px #004172;
-}
+        .founders {
+            clear: both;
+            margin-top: 40px;
+            padding: 20px;
+			float: right;
+			margin-left: 400px;
+        }
 
-.founders-des{
-	color:#004172;
-	background-color: #ADD8E6;
-	padding: 30px;
-	font-size: 20px;
-	float: right;
-	font-weight: bold;
-	
-}
+        .founders h1 {
+            color: #004172;
+            background-color: #ADD8E6;
+            text-align: center;
+            box-shadow: 0 4px 10px #004172;
+            padding: 20px;
+            margin: 0 0 30px 0;
+            border-radius: 8px;
+        }
 
-.founders table{ 
-     float: right;
-	 margin-left: 500px;
-}
+        .founders-des {
+            color: #004172;
+            background-color: #ADD8E6;
+            padding: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px #004172;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .founders-des td {
+            padding: 20px;
+            vertical-align: top;
+            width: 50%;
+        }
+
+        .founders-des p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+
+        @media (max-width: 768px) {
+            .about-us, .side-content {
+                width: 90%;
+                float: none;
+                margin: 20px auto;
+            }
+            
+            .founders-des td {
+                display: block;
+                width: 100%;
+            }
+        }
+
 
 
 
