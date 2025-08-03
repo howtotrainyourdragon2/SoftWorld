@@ -8,11 +8,10 @@
             padding: 0;
         }
     </style>
-	
+
     <link href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorld.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="toast-container" id="toast-container"></div>
 <div class="page-container">
     <div class="navbar">
         <a style="color: white; font-size: 57px; font-weight: bold; margin-right: 30px;"
@@ -20,15 +19,15 @@
         <a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldProduct.html">Products</a>
         <a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldContactUs.html">Contact Us</a>
         <a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldAboutUs.html">About Us</a>
-    
+
         <div class="nav-right">
-           <a href="SoftWorldCart.html" class="cart-button">
+            <a href="SoftWorldCart.html" class="cart-button">
                 Cart<span id="cart-badge" class="cart-badge hidden">0</span>
             </a>
             <input id="search" type="text" placeholder="Search">
         </div>
     </div>
-    
+
     <div class="content">
         <h1 style="text-align: center; margin-top: 40px; font-family: 'Segoe UI', sans-serif;">Soft World</h1>
         <div class="products">
@@ -41,7 +40,7 @@
                     </div>
                 </div>
             </a>
-            
+
             <a href="SoftWorldCapy.html" id="Pics">
                 <div class="product-card">
                     <img src="https://howtotrainyourdragon2.github.io/SoftWorld/CapyMain.png" alt="Capybara">
@@ -51,7 +50,7 @@
                     </div>
                 </div>
             </a>
-            
+
             <a href="SoftWorldMonkey.html" id="Pics">
                 <div class="product-card">
                     <img src="https://howtotrainyourdragon2.github.io/SoftWorld/MonkeyMain.jpg" alt="Monkey">
@@ -63,7 +62,7 @@
             </a>
         </div>
     </div>
-    
+
     <div class="bottom-bar">
         Softest Toys In The World
     </div>
@@ -76,58 +75,23 @@ const products = {
     'Monkey': { price: 14.50, description: 'Playful monkey plush toy', outOfStock: true }
 };
 
-function showToast(message, type = 'success', duration = 3000) {
-    const container = document.getElementById('toast-container');
-    
-    const toast = document.createElement('div');
-    toast.className = `toast ${type}`;
-    
-    const icon = type === 'error' ? '❌' : '✅';
-    toast.innerHTML = `
-        <span class="toast-icon">${icon}</span>
-        <span class="toast-message">${message}</span>
-        <button class="toast-close" onclick="removeToast(this.parentElement)">×</button>
-    `;
-    
-    container.appendChild(toast);
-    
-    setTimeout(() => {
-        toast.classList.add('show');
-    }, 10);
-    
-    setTimeout(() => {
-        removeToast(toast);
-    }, duration);
+function getCart() {
+    const cartData = localStorage.getItem('softWorldCart');
+    return cartData ? JSON.parse(cartData) : {};
 }
 
-function removeToast(toast) {
-    if (toast && toast.parentElement) {
-        toast.classList.add('hide');
-        setTimeout(() => {
-            if (toast.parentElement) {
-                toast.parentElement.removeChild(toast);
-            }
-        }, 300);
-    }
+function saveCart(cart) {
+    localStorage.setItem('softWorldCart', JSON.stringify(cart));
 }
 
 function addToCart(productName, price, outOfStock = false) {
     if (outOfStock) {
-        showToast('This item is currently out of stock', 'error', 3000);
+        alert('OUT OF STOCK');
         return;
     }
-
-    function getCart() {
-        const cartData = localStorage.getItem('softWorldCart');
-        return cartData ? JSON.parse(cartData) : {};
-    }
-
-    function saveCart(cart) {
-        localStorage.setItem('softWorldCart', JSON.stringify(cart));
-    }
-
-    let cart = getCart();
     
+    let cart = getCart();
+
     if (cart[productName]) {
         cart[productName].quantity += 1;
     } else {
@@ -137,19 +101,17 @@ function addToCart(productName, price, outOfStock = false) {
             description: products[productName].description
         };
     }
-    
+
     saveCart(cart);
     updateCartBadge();
-    
-    // Show toast instead of alert
-    showToast(`Added ${productName} to cart!`, 'success', 3000);
+    alert(`Added ${productName} to cart!`);
 }
 
 function updateCartBadge() {
     const cart = getCart();
     const totalItems = Object.values(cart).reduce((sum, item) => sum + item.quantity, 0);
     const badge = document.getElementById('cart-badge');
-    
+
     if (totalItems > 0) {
         badge.textContent = totalItems;
         badge.classList.remove('hidden');
@@ -165,7 +127,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </body>
 </html>
-
-
-
-
