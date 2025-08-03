@@ -1050,7 +1050,7 @@ background-color: #F1F1F1;
     font-size: 16px;
     box-shadow: 0 4px 10px #004172;
     float: right;
-    margin-right: 50px;
+    margin-right: 100px;
 max-width: auto;
 transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
@@ -1083,6 +1083,7 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
             padding: 20px;
 	
         }
+
 
 
 
