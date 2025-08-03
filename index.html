@@ -36,7 +36,33 @@
 		height: 100%;
 		position: relative;
 		}
-		
+		.service-section .service-toggle {
+	background: none;
+	border: none;
+	color: #0077aa;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 0;
+	margin-top: 10px;
+	}
+	.History-section .History-toggle {
+	background: none;
+	border: none;
+	color: #0077aa;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 0;
+	margin-top: 10px;
+	}
+	.FAQ-section .FAQ-toggle {
+	background: none;
+	border: none;
+	color: #0077aa;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 0;
+	margin-top: 10px;
+	}
 	
 	</style>
 	
@@ -91,41 +117,68 @@
 		</table>
 
 		<hr size = "10px" style = "color: #32546E;"/>
-		<h3 align = "middle" style = "font-weight:bold;"/>
-		<div style = "display: flex;justify-content: center;gap: 4%;font-family: seoge UI, san-serif;color: #32546E;">
-	
-			<span>History &nbsp; |<br/>"Soft World was borned in 16 June 2025 <br/>with over 500 staff will bring you the highest quality soft toy<br/> you will ever have.
-			Our company is located at<br/> 19 Upper Serangoon, #00,Singapore 632587<br/> will give you the fastest delivery speed as humanly possible."<br/>
-			We SOLD over 9654 soft toys to across the world</span>
-	
-			<span>Services &nbsp; |<br/>
-			We try bring you the best experiences via these services.<br/>
-			Click which Services you need below <br/>
-			and Fill out your details for us!<br/>
-			Thank You!
-			<a href = "https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldRepair.html">
-			<br/>Repair
-			<br/>Washing
-			<br/>Refund
-			</a>
-			</span>
-			<span>FAQ<br/>
-				<a href = "https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldContactUs.html">Contact Us</a>
-		
-			<br/> 
-		
-			Q1:How long does it take to get my product?<br/>Delivery Time depends on your location but <br/>should take 3 days max.<br/>
-			Q2:How long does it take for us to reply?<br/>We usually reply the next business day!<br/>
-			Q3:Can you gift the soft toy as a present?<br/>Of Course but you do have to add an additional 50&cent;<br/>
-				Q4:Which currency are the products paid in?<br/>All prices are in SGD. The rate as of 7/20/25 is <br/>1 Singapore Dollar = 0.78 US Dollar
-	
 			
-			</span>
-		</h3>
+		<div style = "display: flex;justify-content: center;gap: 4%;font-family: seoge UI, san-serif;color: #32546E;">
+		
+	
+			<div class="History-section">
+				<button onclick="toggleHistory()" class="History-toggle"><h1>History ▼ &nbsp;|</h1></button>
+					<div id="History-info" style="display: none; margin-top: 5px;">
+					<h1>"Soft World was borned in 16 June 2025 <br/>with over 500 staff will bring you the highest quality soft toy<br/> you will ever have.
+					Our company is located at<br/> 19 Upper Serangoon, #00,Singapore 632587<br/> will give you the fastest delivery speed as humanly possible."<br/>
+					We SOLD over 9654 soft toys to across the world
+					</h1>
+					</div>
+			</div>
+		
+	
+		
+			<div class="service-section">
+				<button onclick="toggleservice()" class="service-toggle"><h1>Services ▼ &nbsp;|</h1></button>
+					<div id="service-info" style="display: none; margin-top: 5px;">
+					<h2>We try bring you the best experiences via these services.<br/>
+					Click which Services you need below <br/>
+					and Fill out your details for us!<br/>
+					Thank You!
+					<a href = "https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldRepair.html">
+					<br/>Repair &nbsp;
+					Washing&nbsp;
+					Refund
+					</a>
+					</h2>
+					</div>
+			</div>
+			
+			
+			<div class="FAQ-section">
+				<button onclick="toggleFAQ()" class="FAQ-toggle"><h1>FAQ ▼ &nbsp;|</h1></button>
+					<div id="FAQ-info" style="display: none; margin-top: 5px;">
+					<h2><a href = "https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldContactUs.html">Contact Us</a><br/>
+					Q1:How long does it take to get my product?<br/>Delivery Time depends on your location but <br/>should take 3 days max.<br/>
+					Q2:How long does it take for us to reply?<br/>We usually reply the next business day!<br/>
+					Q3:Can you gift the soft toy as a present?<br/>Of Course but you do have to add an additional 50&cent;<br/>
+					Q4:Which currency are the products paid in?<br/>All prices are in SGD. The rate as of 7/20/25 is <br/>1 Singapore Dollar = 0.78 US Dollar
+					</h2>
+			
+				</div>
+			</div>
 		
 	</div>
 	</div>
-	
+	<script>
+	function toggleHistory() {
+	const History = document.getElementById("History-info");
+	History.style.display = History.style.display === "none" ? "block" : "none";
+}
+function toggleservice() {
+	const service = document.getElementById("service-info");
+	service.style.display = service.style.display === "none" ? "block" : "none";
+}
+function toggleFAQ() {
+	const FAQ = document.getElementById("FAQ-info");
+	FAQ.style.display = FAQ.style.display === "none" ? "block" : "none";
+}
+		</script>
 	<div class="bottom-bar">
 		Softest Toys In The World
 	</div>
