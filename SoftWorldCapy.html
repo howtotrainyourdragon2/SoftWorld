@@ -2,17 +2,16 @@
 <head>
 	<title>Soft World</title>
 	<style>
-		
+
 		body {
 		height: 100%;
 		margin: 0;
 		padding: 0;
 		}
-	
+
 	</style>
-	
 	<link href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorld.css" rel="stylesheet"/>
-	
+
 </head>
 <body>
 
@@ -26,121 +25,323 @@
 		<a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldAboutUs.html">About Us</a>
 
 		<div class="nav-right">
-			<a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldOrder.html">
-			<div class="cart-button">Cart</div></a>
+			<a href="SoftWorldCart.html" class="cart-button">
+               			Cart<span id="cart-badge" class="cart-badge hidden">0</span>
+            		</a>
 			<input id="search" type="text" placeholder="Search">
 		</div>
 	</div>
 
 	<div class="content">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 20px 40px 0;">
+            <a href="SoftWorldProduct.html" style="display: inline-flex; align-items: center; color: #00796B; text-decoration: none; font-weight: bold; font-size: 16px; margin-bottom: 20px; transition: all 0.3s ease;">
+                ← Back to Products
+            </a>
+        </div>
 
-	<div class="product-container">
-		<div class="carousel">
-			<img id="product-image" class="product-image" src="https://howtotrainyourdragon2.github.io/SoftWorld/SharkMain.png" alt="Shark Image">
-			<div class="dots" id="dots"></div>
-		</div>
+        <div class="enhanced-product-container">
+            <div class="enhanced-carousel-section">
+                <div class="image-showcase">
+                    <img id="product-image" class="enhanced-product-image" src="https://howtotrainyourdragon2.github.io/SoftWorld/CapyMain.png" alt="Shark Image">
+                    <div class="image-overlay">
+                        <span class="zoom-hint">Click to zoom</span>
+                    </div>
+                </div>
+                <div class="thumbnail-dots" id="dots"></div>
 
-		<div class="details">
-			<h2>IKEA Shark</h2>
-			<div class="price">$12.99</div>
-			<div class="description">
-			Made with comfortable materials such as 100% fabric and a 100% polyester filling. Amazing soft toy for your kid.
-   		</div>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <div class="feature-icon">🧸</div>
+                        <div class="feature-text">
+                            <strong>Premium Quality</strong>
+                            <span>100% Safe Materials</span>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌟</div>
+                        <div class="feature-text">
+                            <strong>Customer Favorite</strong>
+                            <span>3.8/5 Star Rating</span>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚚</div>
+                        <div class="feature-text">
+                            <strong>Fast Shipping</strong>
+                            <span>2-3 Business Days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		<div class="care-section">
-			<button onclick="toggleCare()" class="care-toggle">How to care ▼</button>
-		<div id="care-info" style="display: none; margin-top: 5px;">
-			Washing instructions: Machine wash, max 40°C, mild process. Do not bleach. Tumble drying, low temperature (max 60°C). Do not iron. Do not dry-clean.
-		</div>
-	</div>
+            <div class="enhanced-details-section">
+                <div class="product-header">
+                    <div class="product-badge">Best Seller</div>
+                    <h1 class="product-title">Capybara</h1>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-text">(97 reviews)</span>
+                    </div>
+                </div>
 
-    <div class="quantity-section">
-		<button onclick="decreaseQty()">-</button>
-		<span id="quantity">1</span>
-		<button onclick="increaseQty()">+</button>
-    </div>
+                <div class="price-section">
+                    <span class="current-price">$9.99</span>
+                    <span class="original-price">$12.49</span>
+                    <span class="discount-badge">20% OFF</span>
+                </div>
 
-		<button class="add-to-cart2" onclick="addToCart()">Add to Cart</button>
-  </div>
+                <div class="description-section">
+                    <h3>Product Description</h3>
+                    <p class="enhanced-description">
+                        Made with comfortable materials such as 100% fabric and a 100% polyester filling. 
+                        This amazing soft toy is perfect for your child, providing comfort and endless fun. 
+                        The Capybara is designed with safety in mind and meets all toy safety standards.
+                    </p>
 
-  <div class="reviews">
-    <h3>⭐ Reviews</h3>
-    <div class="review">
-		<strong>🧑 JunKang K.</strong><br>
-		“Horrible.”<br>★☆☆☆☆
-    </div>
-    <div class="review">
-		<strong>👩‍🦰 Jesse T.</strong><br>
-		“Bought this for my kid, they love it!”<br>★★★★★
-    </div>
-    <div class="review">
-		<strong>🧒 Javen H.</strong><br>
-		“Expected it to be as big as my bed.”<br>★★★☆☆
-    </div>
-  </div>
-</div>
+                    <div class="product-highlights">
+                        <ul>
+                            <li>✓ Hypoallergenic materials</li>
+                            <li>✓ Machine washable</li>
+                            <li>✓ Safe for ages 3+</li>
+                            <li>✓ Durable construction</li>
+                        </ul>
+                    </div>
+                </div>
 
+                <div class="care-section-enhanced">
+                    <button onclick="toggleCare()" class="care-toggle-enhanced">
+                        <span>Care Instructions</span>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div id="care-info" class="care-content">
+                        <div class="care-grid">
+                            <div class="care-item">
+                                <span class="care-icon">🌡️</span>
+                                <span>Machine wash max 40°C</span>
+                            </div>
+                            <div class="care-item">
+                                <span class="care-icon">🚫</span>
+                                <span>Do not bleach</span>
+                            </div>
+                            <div class="care-item">
+                                <span class="care-icon">🔥</span>
+                                <span>Tumble dry low temp</span>
+                            </div>
+                            <div class="care-item">
+                                <span class="care-icon">👔</span>
+                                <span>Do not iron or dry-clean</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase-section">
+                    <div class="quantity-section-enhanced">
+                        <label class="quantity-label">Quantity:</label>
+                        <div class="quantity-controls">
+                            <button class="qty-btn minus" onclick="decreaseQty()">−</button>
+                            <span class="qty-display" id="quantity">1</span>
+                            <button class="qty-btn plus" onclick="increaseQty()">+</button>
+                        </div>
+                        <span class="stock-status">✓ In Stock</span>
+                    </div>
+
+                    <button class="enhanced-add-to-cart" onclick="addToCart()">
+                        <span class="cart-icon">🛒</span>
+                        Add to Cart
+                    </button>
+
+                    <div class="guarantee-text">
+                        <span>💯 30-day money-back guarantee</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="enhanced-reviews-section">
+            <div class="reviews-header">
+                <h2>Customer Reviews</h2>
+                <div class="review-summary">
+                    <div class="rating-breakdown">
+                        <span class="avg-rating">4.2</span>
+                        <div class="rating-stars">★★★★☆</div>
+                        <span class="total-reviews">Based on 127 reviews</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <span class="reviewer-avatar">🧑</span>
+                            <div>
+                                <strong class="reviewer-name">JunKang K.</strong>
+                                <div class="review-date">2 weeks ago</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">★★★★☆</div>
+                    </div>
+                    <p class="review-text">Horrible."</p>
+                    <div class="review-helpful">👍 Helpful (12)</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <span class="reviewer-avatar">👩‍🦰</span>
+                            <div>
+                                <strong class="reviewer-name">Ophe Y.</strong>
+                                <div class="review-date">1 month ago</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">★★★★★</div>
+                    </div>
+                    <p class="review-text">"Bought this for my kid, they love it! Great quality and exactly as described. Fast shipping too!"</p>
+                    <div class="review-helpful">👍 Helpful (8)</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <span class="reviewer-avatar">🧒</span>
+                            <div>
+                                <strong class="reviewer-name">Javen H.</strong>
+                                <div class="review-date">3 weeks ago</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">★★★☆☆</div>
+                    </div>
+                    <p class="review-text">"Expected it to be as big as my bed."</p>
+                    <div class="review-helpful">👍 Helpful (5)</div>
+                </div>
+            </div>
+        </div>
 
 <script>
-const images = ["https://howtotrainyourdragon2.github.io/SoftWorld/CapyMain.png",
+const images = 
+		["https://howtotrainyourdragon2.github.io/SoftWorld/CapyMain.png",
 		"https://howtotrainyourdragon2.github.io/SoftWorld/Capy.jpg",
 		"https://howtotrainyourdragon2.github.io/SoftWorld/Capy2.jpg"];
 let currentImage = 0;
 
-function updateImage() {
-	document.getElementById("product-image").src = images[currentImage];
-	const dots = document.getElementById("dots").children;
-	for (let i = 0; i < dots.length; i++) {
-	dots[i].classList.toggle("active-dot", i === currentImage);
-  }
-}
-function goToImage(index) {
-	currentImage = index;
-	updateImage();
-}
-function autoSlide() {
-	currentImage = (currentImage + 1) % images.length;
-	updateImage();
-}
-setInterval(autoSlide, 3000);
-
-window.onload = function () {
-	const dotContainer = document.getElementById("dots");
-	images.forEach((_, i) => {
-	const dot = document.createElement("span");
-    dot.className = "dot";
-    dot.onclick = () => goToImage(i);
-    dotContainer.appendChild(dot);
-  });
-	updateImage();
+const productData = {
+    name: 'IKEA Shark',
+    price: 12.99,
+    description: 'Soft and cuddly IKEA shark plush toy'
 };
-
-function toggleCare() {
-	const care = document.getElementById("care-info");
-	care.style.display = care.style.display === "none" ? "block" : "none";
-}
 
 let quantity = 1;
 
+function getCart() {
+    const cartData = localStorage.getItem('softWorldCart');
+    return cartData ? JSON.parse(cartData) : {};
+}
+
+function saveCart(cart) {
+    localStorage.setItem('softWorldCart', JSON.stringify(cart));
+}
+
+function updateCartBadge() {
+    const cart = getCart();
+    const totalItems = Object.values(cart).reduce((sum, item) => sum + item.quantity, 0);
+    const badge = document.getElementById('cart-badge');
+
+    if (totalItems > 0) {
+        badge.textContent = totalItems;
+        badge.classList.remove('hidden');
+    } else {
+        badge.classList.add('hidden');
+    }
+}
+
 function updateQtyDisplay() {
-document.getElementById("quantity").textContent = quantity;
+    document.getElementById("quantity").textContent = quantity;
 }
 
 function increaseQty() {
-quantity++;
-updateQtyDisplay();
+    quantity++;
+    updateQtyDisplay();
 }
 
 function decreaseQty() {
-if (quantity > 1) {
-quantity--;
-updateQtyDisplay();
-}
+    if (quantity > 1) {
+        quantity--;
+        updateQtyDisplay();
+    }
 }
 
 function addToCart() {
-alert(`Added ${quantity} Capybara(s) to cart!`);
+    let cart = getCart();
+
+    if (cart[productData.name]) {
+        cart[productData.name].quantity += quantity;
+    } else {
+        cart[productData.name] = {
+            price: productData.price,
+            quantity: quantity,
+            description: productData.description
+        };
+    }
+
+    saveCart(cart);
+    updateCartBadge();
+
+    alert(`Added ${quantity} ${productData.name}${quantity > 1 ? 's' : ''} to cart!`);
+
+    quantity = 1;
+    updateQtyDisplay();
 }
+
+function updateImage() {
+    document.getElementById("product-image").src = images[currentImage];
+    const dots = document.getElementById("dots").children;
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.toggle("active-dot", i === currentImage);
+    }
+}
+
+function goToImage(index) {
+    currentImage = index;
+    updateImage();
+}
+
+function autoSlide() {
+    currentImage = (currentImage + 1) % images.length;
+    updateImage();
+}
+
+setInterval(autoSlide, 3000);
+
+function toggleCare() {
+    const care = document.getElementById("care-info");
+    const button = document.querySelector('.care-toggle-enhanced');
+    const icon = document.querySelector('.toggle-icon');
+
+    if (care.classList.contains('show')) {
+        care.classList.remove('show');
+        button.classList.remove('active');
+        icon.textContent = '▼';
+    } else {
+        care.classList.add('show');
+        button.classList.add('active');
+        icon.textContent = '▲';
+    }
+}
+
+window.onload = function () {
+    const dotContainer = document.getElementById("dots");
+    images.forEach((_, i) => {
+        const dot = document.createElement("span");
+        dot.className = "dot";
+        dot.onclick = () => goToImage(i);
+        dotContainer.appendChild(dot);
+    });
+
+    updateImage();
+    updateQtyDisplay();
+    updateCartBadge();
+};
 </script>
 	</div>
 
