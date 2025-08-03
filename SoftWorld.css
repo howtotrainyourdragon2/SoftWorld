@@ -1059,8 +1059,7 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
             clear: both;
             margin-top: 40px;
             padding: 20px;
-			float: right;
-			margin-left: 400px;
+	float: right;
         }
 
         .founders h1 {
@@ -1071,7 +1070,7 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
             padding: 20px;
             margin: 0 0 30px 0;
             border-radius: 8px;
-	max-width: auto
+	    max-width: auto
         }
 
         .founders-des {
@@ -1095,5 +1094,6 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
             margin: 0;
             line-height: 1.6;
         }
+
 
 
