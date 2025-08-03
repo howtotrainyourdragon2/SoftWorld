@@ -1032,7 +1032,7 @@ background-color: #F1F1F1;
 
 #capy-us{
 	float: right;
-	max-width: 40%;
+	max-width: 35%;
 }
 
 
@@ -1046,7 +1046,7 @@ background-color: #F1F1F1;
 
 .review-button{
     display: inline-block;
-    padding: 50px;
+    padding: 10px 30px;
     background-color: #004172;
     color: #ADD8E6;
     border-radius: 8px;
@@ -1057,7 +1057,7 @@ text-align: center;
 transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
-side-us h3{
+.side-us h3{
 	margin-top: 100px;
 	float: right;
 	color:#004172;
@@ -1068,6 +1068,7 @@ side-us h3{
 }
 	
 	
+
 
 
 
