@@ -1032,7 +1032,8 @@ background-color: #F1F1F1;
 
 #capy-us{
 	float: right;
-	max-width: 35%;
+	max-width: 40%;
+	margin-right: 40px;
 }
 
 
@@ -1091,6 +1092,7 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
      float: right;
 	 margin-left: 500px;
 }
+
 
 
 
