@@ -1037,8 +1037,6 @@ background-color: #F1F1F1;
 .review-button:hover {
 	background-color:  #ADD8E6;
 	color: #004172;
-	float: right;
-	max-width: auto;
 	transform: translateY(-2px); 
 	}
 
@@ -1052,6 +1050,7 @@ background-color: #F1F1F1;
     border-radius: 8px;
     font-size: 16px;
     box-shadow: 0 4px 10px #004172;
+    float: right;
 transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
@@ -1095,6 +1094,7 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
             margin: 0;
             line-height: 1.6;
         }
+
 
 
 
