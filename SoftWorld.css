@@ -1036,7 +1036,6 @@ background-color: #F1F1F1;
 #capy-us{
 	float: right;
 	margin-bottom: 100px;
-	margin-left: 1000px;
 	max-width: 30%;
 }
 
@@ -1064,6 +1063,7 @@ text-align: center;
 	
 transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
+
 
 
 
