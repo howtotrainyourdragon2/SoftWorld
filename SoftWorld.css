@@ -1043,7 +1043,7 @@ background-color: #F1F1F1;
 
 .review-button{
     display: inline-block;
-    padding: 10px 30px;
+    padding: 10px 50px;
     background-color: #004172;
     color: #ADD8E6;
     border-radius: 8px;
@@ -1051,7 +1051,7 @@ background-color: #F1F1F1;
     box-shadow: 0 4px 10px #004172;
     float: right;
     margin-right: 100px;
-max-width: auto;
+    margin-top: 15px;
 transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
@@ -1083,6 +1083,7 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
             padding: 20px;
 	
         }
+
 
 
 
