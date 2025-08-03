@@ -1055,20 +1055,9 @@ background-color: #F1F1F1;
     box-shadow: 0 4px 10px #004172;
 	float: right;
 transition: transform 0.3s, background-color 0.3s, color 0.3s;
-		margin-top: 100px;
+		margin-top: 80px;
 }
 
-.side-us h3{
-	margin-top: 100px;
-	float: right;
-	color:#004172;
-        background-color: #ADD8E6;
-	box-shadow: 0 4px 10px #004172;
-	width: 80px;
-	height: 30px;
-	text-align: center;
-	border-radius: 5px;
-}
         .founders {
             clear: both;
             margin-top: 40px;
@@ -1123,6 +1112,7 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
                 width: 100%;
             }
         }
+
 
 
 
