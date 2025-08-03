@@ -2,20 +2,19 @@
 <head>
 	<title>Soft World</title>
 	<style>
-		
+
 		body {
 		height: 100%;
 		margin: 0;
 		padding: 0;
 		}
-	
+
 	</style>
-	
 	<link href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorld.css" rel="stylesheet"/>
-	
+
 </head>
 <body>
-<div class="toast-container" id="toast-container"></div>
+
 <div class="page-container">
 
 	<div class="navbar">
@@ -49,7 +48,7 @@
                     </div>
                 </div>
                 <div class="thumbnail-dots" id="dots"></div>
-                
+
                 <div class="feature-cards">
                     <div class="feature-card">
                         <div class="feature-icon">🧸</div>
@@ -98,7 +97,7 @@
                         This amazing soft toy is perfect for your child, providing comfort and endless fun. 
                         The IKEA Shark is designed with safety in mind and meets all toy safety standards.
                     </p>
-                    
+
                     <div class="product-highlights">
                         <ul>
                             <li>✓ Hypoallergenic materials</li>
@@ -151,7 +150,7 @@
                         <span class="cart-icon">🛒</span>
                         Add to Cart
                     </button>
-                    
+
                     <div class="guarantee-text">
                         <span>💯 30-day money-back guarantee</span>
                     </div>
@@ -170,7 +169,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="reviews-grid">
                 <div class="review-card">
                     <div class="review-header">
@@ -224,7 +223,7 @@ const images = [
    "https://howtotrainyourdragon2.github.io/SoftWorld/SharkMain.png",
 	"https://howtotrainyourdragon2.github.io/SoftWorld/Shark.png",
 	"https://howtotrainyourdragon2.github.io/SoftWorld/Shark2.png"];
-	
+
 let currentImage = 0;
 
 const productData = {
@@ -248,7 +247,7 @@ function updateCartBadge() {
     const cart = getCart();
     const totalItems = Object.values(cart).reduce((sum, item) => sum + item.quantity, 0);
     const badge = document.getElementById('cart-badge');
-    
+
     if (totalItems > 0) {
         badge.textContent = totalItems;
         badge.classList.remove('hidden');
@@ -275,7 +274,7 @@ function decreaseQty() {
 
 function addToCart() {
     let cart = getCart();
-    
+
     if (cart[productData.name]) {
         cart[productData.name].quantity += quantity;
     } else {
@@ -285,16 +284,16 @@ function addToCart() {
             description: productData.description
         };
     }
-    
+
     saveCart(cart);
     updateCartBadge();
 
-    const message = `Added ${quantity} ${productData.name}${quantity > 1 ? 's' : ''} to cart!`;
-    showToast(message, 'success', 3000);
+    alert(`Added ${quantity} ${productData.name}${quantity > 1 ? 's' : ''} to cart!`);
 
     quantity = 1;
     updateQtyDisplay();
 }
+
 function updateImage() {
     document.getElementById("product-image").src = images[currentImage];
     const dots = document.getElementById("dots").children;
@@ -319,7 +318,7 @@ function toggleCare() {
     const care = document.getElementById("care-info");
     const button = document.querySelector('.care-toggle-enhanced');
     const icon = document.querySelector('.toggle-icon');
-    
+
     if (care.classList.contains('show')) {
         care.classList.remove('show');
         button.classList.remove('active');
@@ -344,41 +343,6 @@ window.onload = function () {
     updateQtyDisplay();
     updateCartBadge();
 };
-
-	function showToast(message, type = 'success', duration = 3000) {
-    const container = document.getElementById('toast-container');
-    
-    const toast = document.createElement('div');
-    toast.className = `toast ${type}`;
-    
-    const icon = type === 'error' ? '❌' : '✅';
-    toast.innerHTML = `
-        <span class="toast-icon">${icon}</span>
-        <span class="toast-message">${message}</span>
-        <button class="toast-close" onclick="removeToast(this.parentElement)">×</button>
-    `;
-    
-    container.appendChild(toast);
-    
-    setTimeout(() => {
-        toast.classList.add('show');
-    }, 10);
-    
-    setTimeout(() => {
-        removeToast(toast);
-    }, duration);
-}
-
-function removeToast(toast) {
-    if (toast && toast.parentElement) {
-        toast.classList.add('hide');
-        setTimeout(() => {
-            if (toast.parentElement) {
-                toast.parentElement.removeChild(toast);
-            }
-        }, 300);
-    }
-}
 </script>
 	</div>
 
