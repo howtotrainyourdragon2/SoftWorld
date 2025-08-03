@@ -742,6 +742,8 @@ border-radius: 15px;
 	border-radius: 12px;
 	max-width: 35%;
 	box-shadow: 0 4px 10px #004172;
+	float: left;
+	
 }
 
 .order-section {
@@ -946,7 +948,6 @@ background-color: #F1F1F1;
 	color: #004172;
 	background-color: #ADD8E6;
 	border: none;
-	align-content: center;
 	border-radius: 15px;
 	margin-top: 20px;
 	font-size: 25px;
@@ -1049,9 +1050,7 @@ background-color: #F1F1F1;
     border-radius: 8px;
     font-size: 16px;
     box-shadow: 0 4px 10px #004172;
-	float: right;
 transition: transform 0.3s, background-color 0.3s, color 0.3s;
-		margin-top: 80px;
 }
 
         .founders {
@@ -1108,6 +1107,7 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
                 width: 100%;
             }
         }
+
 
 
 
