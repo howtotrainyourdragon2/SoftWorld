@@ -159,10 +159,8 @@ function updateCartDisplay() {
 }
 
 function checkout() {
-    const total = document.getElementById('total').textContent;
-    alert(`Thank you for your order! Total: ${total}\n\nThis is a demo - no actual payment processed.`);
-    
-    // Clear cart
+    window.location.href = 'https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldCart.html';
+}
     localStorage.removeItem('softWorldCart');
     updateCartDisplay();
     updateCartBadge();
