@@ -1447,6 +1447,31 @@ input:focus {
 }
 
 
+    .Enqiures{
+	color: #004172;
+	text-align: center;
+}
+
+.Contactus-button{
+	display: inline-block;
+    padding: 10px 30px;
+    background-color: #004172;
+    color: #ADD8E6;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 4px 10px #004172;
+	float: right;
+	clear: both;
+transition: transform 0.3s, background-color 0.3s, color 0.3s;
+	
+}
+
+.Contactus-button:hover {
+	background-color:  #ADD8E6;
+	color: #004172;
+	transform: translateY(-2px); 
+	}
+
 
 
 
