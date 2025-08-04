@@ -1198,7 +1198,7 @@ input:focus {
     padding: 40px;
     border-radius: 10px;
     color: #004172;
-    float: left;
+    float: right;
     margin-right: 40px;
 }
 
@@ -1376,7 +1376,6 @@ input:focus {
     padding: 20px;
 }
 
-/* Mobile responsiveness */
 @media (max-width: 768px) {
     .enhanced-product-container {
         grid-template-columns: 1fr;
@@ -1451,3 +1450,4 @@ input:focus {
         float: none;
         margin: 20px auto;
     }
+
