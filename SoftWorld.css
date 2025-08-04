@@ -704,19 +704,19 @@ body {
     color: #004172;
 }
 
-.ophe {
-    border-collapse: separate;
-    border-spacing: 0;
-    box-shadow: 0px 8px 12px #004172;
-    border-radius: 12px;
-    overflow: hidden;
-    float: left;
-    background-color: #ADD8E6;
-    margin-left: 50px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
+ .ophe {
+            border-collapse: separate;
+            border-spacing: 0;
+            box-shadow: 0px 8px 12px #004172;
+            border-radius: 12px;
+            overflow: hidden;
+            float: left;
+            background-color: #ADD8E6;
+            margin-left: 50px;
+            margin-top: 30px; 
+            margin-bottom: 100px;
+            clear: left;
+        }
 td {
     padding: 10px;
 }
@@ -1115,50 +1115,51 @@ input:focus {
     opacity: 1;
 }
 
-.about-us {
-    width: 50%;
-    float: left;
-    margin-top: 55px;
-    border-radius: 12px;
-    background-color: #ADD8E6;
-    color: #004172;
-    margin-left: 30px;
-    margin-right: 15px;
-    box-shadow: 0 7px 15px #004172;
-}
+ .about-us {
+            width: 50%;
+            float: left;
+            margin-top: 55px;
+            border-radius: 12px;
+            background-color: #ADD8E6;
+            color: #004172;
+            margin-left: 30px;
+            margin-right: 15px;
+            box-shadow: 0 7px 15px #004172;
+            margin-bottom: 30px; /* Added margin-bottom for spacing */
+        }
 
-.about-us h1 {
-    width: 475px;
-    text-align: center;
-    font-size: 40px;
-    color: #004172;
-}
+        .about-us h1 {
+            width: 100%;
+            text-align: center;
+            font-size: 40px;
+            color: #004172;
+        }
 
-.about-us p {
-    width: 475px;
-    font-size: 18px;
-    margin-left: 70px;
-    margin-right: 20px;
-}
+        .about-us p {
+            width: 100%;
+            font-size: 18px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
 
-.about-us button {
-    height: 45px;
-    width: auto;
-    background-color: #FFFFFF;
-    color: #004172;
-    border: none;
-    align-content: center;
-    border-radius: 15px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s, color 0.3s;
-}
+        .about-us button {
+            height: 45px;
+            width: auto;
+            background-color: #FFFFFF;
+            color: #004172;
+            border: none;
+            align-content: center;
+            border-radius: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s, color 0.3s;
+        }
 
-.about-us button:hover {
-    background-color: #004172;
-    color: #FFFFFF;
-    transform: translateY(-2px);
-}
+        .about-us button:hover {
+            background-color: #004172;
+            color: #FFFFFF;
+            transform: translateY(-2px);
+        }
 
 .yak-table {
     background-color: #fff;
@@ -1206,6 +1207,8 @@ input:focus {
     border-radius: 12px;
     max-width: 35%;
     box-shadow: 0 4px 10px #004172;
+	clear: both; 
+            margin-bottom: 20px;
 }
 
 .register-2 {
@@ -1313,20 +1316,22 @@ input:focus {
     color: #004172;
 }
 
-.side-us {
-    float: right;
-    margin-left: 15px;
-    margin-right: 30px;
-    margin-top: 60px;
-}
+ .side-us {
+            float: right;
+            margin-left: 15px;
+            margin-right: 30px;
+            margin-top: 20px; 
+            clear: right; 
+            margin-bottom: 30px; 
+        }
 
-.side-us h1 {
-    color: #004172;
-    background-color: #ADD8E6;
-    text-align: center;
-    box-shadow: 0 4px 10px #004172;
-    padding: 20px;
-}
+        .side-us h1 {
+            color: #004172;
+            background-color: #ADD8E6;
+            text-align: center;
+            box-shadow: 0 4px 10px #004172;
+            padding: 20px;
+        }
 
 .review-button {
     display: inline-block;
@@ -1349,26 +1354,28 @@ input:focus {
     transform: translateY(-2px);
 }
 
-.founders h1 {
-    color: #004172;
-    background-color: #ADD8E6;
-    text-align: center;
-    box-shadow: 0 4px 10px #004172;
-}
+        .founders {
+            padding: 20px;
+            clear: both; 
+            margin-top: 30px; 
+            margin-bottom: 30px;
+        }
 
-.founders-des {
-    color: #004172;
-    background-color: #ADD8E6;
-    padding: 30px;
-    font-size: 20px;
-    float: right;
-    font-weight: bold;
-}
+        .founders h1 {
+            color: #004172;
+            background-color: #ADD8E6;
+            text-align: center;
+            box-shadow: 0 4px 10px #004172;
+        }
 
-.founders {
-    padding: 20px;
-clear: both;
-}
+        .founders-des {
+            color: #004172;
+            background-color: #ADD8E6;
+            padding: 30px;
+            font-size: 20px;
+            float: right;
+            font-weight: bold;
+        }
 
 @media (max-width: 768px) {
     .enhanced-product-container {
@@ -1440,38 +1447,35 @@ clear: both;
         width: 100%;
     }
 
-    .founders table {
-        float: right;
-        clear: both;
-        margin: 20px auto;
-}
 
 
-.Enqiures{
-	color: #004172;
-	text-align: center;
-	clear: both;
-}
+.Enqiures {
+            color: #004172;
+            text-align: center;
+            clear: both; /* This was already there */
+            margin-top: 30px; /* Added spacing */
+        }
 
-.Contactus-button{
-	display: inline-block;
-    padding: 10px 30px;
-    background-color: #004172;
-    color: #ADD8E6;
-    border-radius: 8px;
-    font-size: 16px;
-    box-shadow: 0 4px 10px #004172;
-	float: right;
-	clear: both;
-transition: transform 0.3s, background-color 0.3s, color 0.3s;
-	
-}
+        .Contactus-button {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #004172;
+            color: #ADD8E6;
+            border-radius: 8px;
+            font-size: 16px;
+            box-shadow: 0 4px 10px #004172;
+            float: right;
+            clear: both; /* This was already there */
+            transition: transform 0.3s, background-color 0.3s, color 0.3s;
+            margin-bottom: 30px; /* Added margin-bottom */
+        }
 
-.Contactus-button:hover {
-	background-color:  #ADD8E6;
-	color: #004172;
-	transform: translateY(-2px); 
-	}
+        .Contactus-button:hover {
+            background-color: #ADD8E6;
+            color: #004172;
+            transform: translateY(-2px);
+        }
+
 
 
 
