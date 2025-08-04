@@ -1365,14 +1365,12 @@ input:focus {
     font-weight: bold;
 }
 
-.founders table {
-    float: right;
-}
 
 .founders {
     clear: both;
     margin-top: 40px;
     padding: 20px;
+    float: right;
 }
 
 @media (max-width: 768px) {
@@ -1450,6 +1448,7 @@ input:focus {
         clear: both;
         margin: 20px auto;
     }
+
 
 
 
