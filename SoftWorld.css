@@ -1364,10 +1364,6 @@ input:focus {
     float: right;
     font-weight: bold;
 }
-.founder table{
-    float: right;
-      clear: both;
-}
 
 .founders {
     margin-top: 40px;
@@ -1445,10 +1441,11 @@ input:focus {
     }
 
     .founders table {
-        float: none;
+        float: right;
         clear: both;
         margin: 20px auto;
-    }
+}
+
 
 
 
