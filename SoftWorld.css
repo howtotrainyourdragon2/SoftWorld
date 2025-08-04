@@ -1366,8 +1366,8 @@ input:focus {
 }
 
 .founders {
-    margin-top: 40px;
     padding: 20px;
+clear: both;
 }
 
 @media (max-width: 768px) {
@@ -1447,7 +1447,7 @@ input:focus {
 }
 
 
-    .Enqiures{
+.Enqiures{
 	color: #004172;
 	text-align: center;
 }
@@ -1471,6 +1471,7 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
 	color: #004172;
 	transform: translateY(-2px); 
 	}
+
 
 
 
