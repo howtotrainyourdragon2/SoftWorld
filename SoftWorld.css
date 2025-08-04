@@ -716,6 +716,8 @@ body {
             margin-top: 30px; 
             margin-bottom: 100px;
             clear: left;
+	 float: none;
+                margin: 20px auto;
         }
 td {
     padding: 10px;
@@ -1322,7 +1324,10 @@ input:focus {
             margin-right: 30px;
             margin-top: 20px; 
             clear: right; 
-            margin-bottom: 30px; 
+            margin-bottom: 30px;
+	 float: none;
+                margin: 20px auto;
+                width: 90%;
         }
 
         .side-us h1 {
@@ -1359,6 +1364,8 @@ input:focus {
             clear: both; 
             margin-top: 30px; 
             margin-bottom: 30px;
+		clear: both;
+                margin: 20px auto;
         }
 
         .founders h1 {
@@ -1375,6 +1382,8 @@ input:focus {
             font-size: 20px;
             float: right;
             font-weight: bold;
+		 float: none;
+                width: 100%;
         }
 
 @media (max-width: 768px) {
@@ -1475,6 +1484,7 @@ input:focus {
             color: #004172;
             transform: translateY(-2px);
         }
+
 
 
 
