@@ -1450,6 +1450,7 @@ clear: both;
 .Enqiures{
 	color: #004172;
 	text-align: center;
+	clear: both;
 }
 
 .Contactus-button{
@@ -1471,6 +1472,7 @@ transition: transform 0.3s, background-color 0.3s, color 0.3s;
 	color: #004172;
 	transform: translateY(-2px); 
 	}
+
 
 
 
