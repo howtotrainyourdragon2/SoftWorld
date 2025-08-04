@@ -1447,7 +1447,9 @@ input:focus {
 
     .founders table {
         float: none;
+        clear: both;
         margin: 20px auto;
     }
+
 
 
