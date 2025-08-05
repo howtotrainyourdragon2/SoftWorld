@@ -1527,13 +1527,14 @@ gap: 35px;
 	margin-top: 10px;
 	}
 
-homealignment{
+#homealignment{
 	display: flex;
 	justify-content: center;
 	gap: 4%;
 	font-family: seoge UI, san-serif;
 	color: #32546E;
 }
+
 
 
 
