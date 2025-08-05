@@ -1320,10 +1320,9 @@ input:focus {
 }
 
  .side-us {
-            margin-top: 50px; 
+            margin-top: 80px; 
             clear: both; 
 	 float: none;
-                margin: 20px auto;
                 width: 90%;
         }
 
@@ -1471,6 +1470,7 @@ input:focus {
             color: #004172;
             transform: translateY(-2px);
         }
+
 
 
 
