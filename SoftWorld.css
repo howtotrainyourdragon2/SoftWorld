@@ -1484,6 +1484,7 @@ gap: 35px;
 	font-weight:bold;
 	background-color:#B3D4CA;
 	color: #32546E;
+	font-family: seoge UI, san-serif;
 }
 .picforhome{
 	max-width:250px;
@@ -1526,6 +1527,13 @@ gap: 35px;
 	margin-top: 10px;
 	}
 
+homealignment{
+	display: flex;
+	justify-content: center;
+	gap: 4%;
+	font-family: seoge UI, san-serif;
+	color: #32546E;
+}
 
 
 
