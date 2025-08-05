@@ -1209,8 +1209,11 @@ input:focus {
     border-radius: 12px;
     max-width: 35%;
     box-shadow: 0 4px 10px #004172;
-	clear: both; 
-            margin-bottom: 20px;
+clear: both; 
+ margin-bottom: 20px;
+ display: block;       
+    margin: 30px auto;   
+    clear: both;    
 }
 
 .register-2 {
@@ -1383,6 +1386,7 @@ input:focus {
             font-weight: bold;
 		 float: none;
                 width: 100%;
+		 margin-bottom: 30px;
         }
 
 @media (max-width: 768px) {
@@ -1525,5 +1529,14 @@ gap: 35px;
          margin-top: auto;
 
 }
+
+
+.contact-section {
+    clear: both;          
+    margin-top: 50px;    
+    width: 100%;         
+    display: block;      
+}
+
 
 
