@@ -1363,15 +1363,15 @@ input:focus {
                 margin: 20px auto;
         }
 
-        .founders p {
-            color: #004172;
-              float: right;
-         margin-left: auto;
-		margin-right: 50px;
-		margin-top: 80px;
-		font-size: 60px;
-		
-        }
+
+.founders > p {  
+    color: #004172;
+    float: right;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 80px;
+    font-size: 60px;
+}
 
         .founder-des {
             color: #004172;
@@ -1549,6 +1549,7 @@ gap: 35px;
 	background-color:#ADD8E6;
 	max-width: auto;
 }
+
 
 
 
