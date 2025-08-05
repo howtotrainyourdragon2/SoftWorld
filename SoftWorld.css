@@ -1363,7 +1363,7 @@ input:focus {
                 margin: 20px auto;
         }
 
-        .founders h1 {
+        .founders p {
             color: #004172;
               float: right;
          margin-left: auto;
@@ -1539,6 +1539,7 @@ gap: 35px;
 	font-family: seoge UI, san-serif;
 	color: #32546E;
 }
+
 
 
 
