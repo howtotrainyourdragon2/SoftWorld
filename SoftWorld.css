@@ -1367,7 +1367,9 @@ input:focus {
 
         .founders h1 {
             color: #004172;
-            position: absolute;
+              float: right;
+  margin-bottom: 20px; 
+  margin-left: auto;
         }
 
         .founders-des {
@@ -1469,6 +1471,7 @@ input:focus {
             color: #004172;
             transform: translateY(-2px);
         }
+
 
 
 
