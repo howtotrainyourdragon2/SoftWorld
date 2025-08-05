@@ -1361,6 +1361,7 @@ input:focus {
             margin-bottom: 30px;
 		clear: both;
                 margin: 20px auto;
+		  position: relative;
         }
 
 
@@ -1520,5 +1521,9 @@ gap: 35px;
 .touch{
 	text-align: center;
 	color: #004172;
+	  display: flex;
+         margin-top: auto;
+
 }
+
 
