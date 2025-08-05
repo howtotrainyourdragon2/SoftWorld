@@ -1334,8 +1334,6 @@ input:focus {
 	   margin-top: 20px; 
             box-shadow: 0 4px 10px #004172;
             padding: 20px;
-		float: right;
-		font-size: 100px;
         }
 
 .review-button {
@@ -1369,7 +1367,7 @@ input:focus {
 
         .founders h1 {
             color: #004172;
-           clear: right;
+            position: absolute;
         }
 
         .founders-des {
@@ -1471,6 +1469,7 @@ input:focus {
             color: #004172;
             transform: translateY(-2px);
         }
+
 
 
 
