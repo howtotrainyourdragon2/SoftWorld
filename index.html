@@ -8,7 +8,61 @@
 		margin: 0;
 		padding: 0;
 		}
+		#product-cardjk{
 		
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 35px;
+		}
+		#textforhome{
+      		padding: 5px; 
+      		border-radius: 5px;
+		font-weight:bold;
+		font-size:37px;
+		background-color: #B3D4CA; 
+		color: #32546E;
+			
+		}
+		.picforhome{
+		max-width: 250px;
+		background: white;
+		border-radius: 12px;
+		box-shadow: 0 8px 16px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+		position: relative;
+		}
+		.service-section .service-toggle {
+	background: none;
+	border: none;
+	color: #0077aa;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 0;
+	margin-top: 10px;
+	}
+	.History-section .History-toggle {
+	background: none;
+	border: none;
+	color: #0077aa;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 0;
+	margin-top: 10px;
+	}
+	.FAQ-section .FAQ-toggle {
+	background: none;
+	border: none;
+	color: #0077aa;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 0;
+	margin-top: 10px;
+	}
 	
 	</style>
 	
@@ -36,16 +90,16 @@
 		
 		<table border = "0" style = "width: 100%;height:100%;" >
 			<tr>
-				<td align = "middle" ><h1 id = "textforhome" >Soft World</h1></td>
+				<td align = "middle" style = "font-weight:bold;"><h1 id = "textforhome" >Soft World</h1></td>
 			</tr>
 			<tr>
 				<td background = "https://howtotrainyourdragon2.github.io/SoftWorld/HomePagePic.jpg" style = "background-size: 100% 100%; background-repeat: no-repeat;background-position: center;" height = "378px"/>
-				<div><mark id = "textforhome" >"Look at how happy is this boy!"<br/> You can be like him too! <br/> Just Purchase IKEA Shark Right Now!</mark></div>
+				<div><mark id = "textforhome" style="font-family: seoge UI, san-serif;">"Look at how happy is this boy!"<br/> You can be like him too! <br/> Just Purchase IKEA Shark Right Now!</mark></div>
 					
 				</td>
 			</tr>
 			<tr>
-				<td align = "middle" ><h1 id = "textforhome" >TOP SELLING PRODUCTS</h1></td>
+				<td align = "middle" style = "font-weight:bold;"><h1 id = "textforhome" >TOP SELLING PRODUCTS</h1></td>
 			</tr>
 			<tr>
 				<td >
@@ -65,7 +119,7 @@
 
 		<hr style = "color: #32546E;"/>
 			
-		<div id = "homealignment">
+		<div style = "display: flex;justify-content: center;gap: 4%;font-family: seoge UI, san-serif;color: #32546E;">
 		
 	
 			<div class="History-section">
@@ -144,6 +198,7 @@ function toggleFAQ() {
 	
 </body>
 </html>	
+
 
 
 
