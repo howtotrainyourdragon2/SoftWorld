@@ -1207,10 +1207,11 @@ input:focus {
 
 #group-pic {
     border-radius: 12px;
-    max-width: 35%;
+    max-width: 60%;
     box-shadow: 0 4px 10px #004172;
-clear: both; 
- margin-bottom: 20px;  
+    clear: both; 
+    margin: 30px auto;  /* Center the image */
+    display: block;  /* Make it a block element */
 }
 
 .register-2 {
@@ -1221,17 +1222,23 @@ clear: both;
     color: #004172;
     text-align: center;
     font-size: 25px;
-    margin-top: 600px;
+    margin: 50px auto; 
+    max-width: 1000px;
+    clear: both;  
 }
 
 .register table {
-    margin: auto;
+    margin: 20px auto;
     color: #004172;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
-    border-color: #ADD8E6;
+    border-spacing: 10px;
 }
 
+.register td {
+    padding: 8px;
+    vertical-align: top;
+}
 .register input[type="text"],
 .register input[type="date"] {
     width: 200px;
@@ -1318,12 +1325,11 @@ clear: both;
     color: #004172;
 }
 
- .side-us {
-            clear: both; 
-	 float: none;
-        width: 90%;
-	 margin: 20px auto;
-        }
+.side-us {
+    clear: both; 
+    width: 90%;
+    margin: 50px auto;
+}
 
         .side-us h1 {
             color: #004172;
@@ -1354,33 +1360,40 @@ clear: both;
     transform: translateY(-2px);
 }
 
-        .founders {
-            padding: 20px;
-            clear: both; 
-            margin-top: 30px; 
-            margin-bottom: 30px;
-	
-        }
+.founders {
+    clear: both;
+    width: 100%;
+    margin: 50px auto 30px auto;
+    padding: 20px;
+}
 
 
 .founders > p {  
     color: #004172;
-    float: right;
-    margin-left: auto;
+    text-align: center; 
     font-weight: bold;
-    margin-top: 80px;
+    margin: 20px auto 30px auto;
     font-size: 50px;
+    width: 100%;
 }
 
-        .founder-des {
-            color: #004172;
-            background-color: #ADD8E6;
-            padding: 30px;
-            font-size: 20px;
-            float: right;
-            font-weight: bold;
-                width: 100%;
-        }
+.founder-des {
+    color: #004172;
+    background-color: #ADD8E6;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    margin: 0 auto; 
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+.founder-des p {
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.5;
+}
+
 
 @media (max-width: 768px) {
     .enhanced-product-container {
@@ -1529,9 +1542,11 @@ gap: 35px;
 
 .contact-section {
     clear: both;          
-    margin-top: 50px;    
-    width: 100%;         
-    display: block;      
+    margin: 50px auto;    
+    width: 100%;
+    max-width: 800px;         
+    display: block;
+    text-align: center;
 }
 
 
