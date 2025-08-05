@@ -1321,7 +1321,7 @@ input:focus {
 
  .side-us {
             margin-top: 20px; 
-            clear: right; 
+            clear: both; 
 	 float: none;
                 margin: 20px auto;
                 width: 90%;
@@ -1344,10 +1344,9 @@ input:focus {
     border-radius: 8px;
     font-size: 16px;
     box-shadow: 0 4px 10px #004172;
-    float: right;
-    margin-right: 150px;
+    float: left;
+    margin-left: 60px;
     margin-top: 15px;
-    cursor: pointer;
     transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
@@ -1433,16 +1432,6 @@ input:focus {
         margin: 20px auto;
     }
 
-    .about-us h1 {
-        width: 100%;
-    }
-
-    .about-us p {
-        width: 100%;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
     #shark-us, #capy-us {
         float: none;
         max-width: 80%;
@@ -1472,9 +1461,9 @@ input:focus {
             font-size: 16px;
             box-shadow: 0 4px 10px #004172;
             float: right;
-            clear: both; /* This was already there */
+            clear: both;
             transition: transform 0.3s, background-color 0.3s, color 0.3s;
-            margin-bottom: 30px; /* Added margin-bottom */
+            margin-bottom: 30px; 
         }
 
         .Contactus-button:hover {
@@ -1482,6 +1471,7 @@ input:focus {
             color: #004172;
             transform: translateY(-2px);
         }
+
 
 
 
