@@ -1450,11 +1450,11 @@ input:focus {
             color: #004172;
             text-align: center;
             clear: both; 
-	font-size: 18;
+	font-size: 18px;
             margin-top: 30px; 
         }
-
-        .Contactus-button {
+	
+ #Contactus-button {
             display: inline-block;
             padding: 10px 30px;
             background-color: #004172;
@@ -1462,17 +1462,17 @@ input:focus {
             border-radius: 8px;
             font-size: 16px;
             box-shadow: 0 4px 10px #004172;
-            float: right;
             clear: both;
             transition: transform 0.3s, background-color 0.3s, color 0.3s;
-            margin-bottom: 30px; 
         }
 
-        .Contactus-button:hover {
+        #Contactus-button:hover {
             background-color: #ADD8E6;
             color: #004172;
             transform: translateY(-2px);
         }
+
+	
 #tablejk{
 			background-color: #f8f9fa;
 			padding: 20px;
@@ -1540,6 +1540,7 @@ gap: 35px;
 	font-family: seoge UI, san-serif;
 	color: #32546E;
 }
+
 
 
 
