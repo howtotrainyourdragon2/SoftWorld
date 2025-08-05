@@ -1209,9 +1209,8 @@ input:focus {
     border-radius: 12px;
     max-width: 60%;
     box-shadow: 0 4px 10px #004172;
-    clear: both; 
-    margin: 30px auto;  /* Center the image */
-    display: block;  /* Make it a block element */
+    margin: 30px auto;
+    display: block; 
 }
 
 .register-2 {
@@ -1548,6 +1547,7 @@ gap: 35px;
     display: block;
     text-align: center;
 }
+
 
 
 
