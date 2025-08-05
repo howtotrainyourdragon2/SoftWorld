@@ -1132,7 +1132,8 @@ input:focus {
 
         .about-us h1 {
             width: 100%;
-            text-align: center;
+        margin-left: 70px;
+        margin-right: 20px;
             font-size: 40px;
             color: #004172;
         }
@@ -1319,12 +1320,8 @@ input:focus {
 }
 
  .side-us {
-            float: right;
-            margin-left: 15px;
-            margin-right: 30px;
             margin-top: 20px; 
             clear: right; 
-            margin-bottom: 30px;
 	 float: none;
                 margin: 20px auto;
                 width: 90%;
@@ -1334,6 +1331,7 @@ input:focus {
             color: #004172;
             background-color: #ADD8E6;
             text-align: center;
+	   margin-top: 20px; 
             box-shadow: 0 4px 10px #004172;
             padding: 20px;
         }
@@ -1347,7 +1345,7 @@ input:focus {
     font-size: 16px;
     box-shadow: 0 4px 10px #004172;
     float: right;
-    margin-right: 100px;
+    margin-right: 150px;
     margin-top: 15px;
     cursor: pointer;
     transition: transform 0.3s, background-color 0.3s, color 0.3s;
@@ -1484,6 +1482,7 @@ input:focus {
             color: #004172;
             transform: translateY(-2px);
         }
+
 
 
 
