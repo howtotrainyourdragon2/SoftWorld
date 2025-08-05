@@ -1367,7 +1367,7 @@ input:focus {
             color: #004172;
               float: right;
          margin-left: auto;
-		margin-right: 60px;
+		margin-right: 50px;
 		margin-top: 80px;
 		font-size: 60px;
 		
@@ -1543,6 +1543,12 @@ gap: 35px;
 
 
 
+.contact-us3{
+	text-align: center;
+	color: #004172;
+	background-color:#ADD8E6;
+	max-width: auto;
+}
 
 
 
