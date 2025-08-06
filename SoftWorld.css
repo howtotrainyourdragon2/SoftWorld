@@ -711,11 +711,6 @@ body {
             overflow: hidden;
             float: left;
             background-color: #ADD8E6;
-            margin-left: 50px;
-            margin-top: 30px; 
-            margin-bottom: 100px;
-            clear: left;
-	 float: none;
                 margin: 20px auto;
         }
 td {
@@ -1547,6 +1542,7 @@ color: #004172;
 	color:  #004172;
 	padding: 10px;
 }
+
 
 
 
