@@ -1542,8 +1542,11 @@ color: #004172;
 }
 
 
-
-
+.fa-brands{
+	font-size: 50px;
+	color:  #004172;
+	padding: 10px;
+}
 
 
 
