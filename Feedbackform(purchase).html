@@ -1,1 +1,201 @@
+<html>
+  
+<body>
+<div class="page-container">
+	<div class="navbar">
+		<a style="color: white; font-size: 57px; font-weight: bold; margin-right: 30px;"
+		href="https://howtotrainyourdragon2.github.io/SoftWorld/index.html">SW</a>
+		<a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldProduct.html">Products</a>
+		<a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldContactUs.html">Contact Us</a>
+		<a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldAboutUs.html">About Us</a>
+		<div class="nav-right">
+			<a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldCart.html">
+			<div class="cart-button">Cart</div></a>
+			<input id="search" type="text" placeholder="Search">
+		</div>
+	</div>
+	
+	<div class="content">
+		<div align="center">
+			<h1>FEEDBACK FORM</h1>
+			<div class="form-container">
+				<form id="feedbackForm">
+					<div class="form-group">
+						<label for="customerName">Your Name: <span class="required">*</span></label>
+						<input type="text" id="customerName" name="customerName" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="email">Email Address: <span class="required">*</span></label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					
 
+					
+					<div class="form-group">
+						<label for="feedbackType">Feedback Type: <span class="required">*</span></label>
+						<select id="feedbackType" name="feedbackType" required>
+							<option value="">Please select...</option>
+							<option value="product-quality">Product Quality</option>
+							<option value="shipping">Shipping & Delivery</option>
+							<option value="customer-service">Customer Service</option>
+							<option value="website">Website Experience</option>
+							<option value="suggestion">Suggestion</option>
+							<option value="complaint">Complaint</option>
+							<option value="compliment">Compliment</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label>Overall Rating: <span class="required">*</span></label>
+						<div class="rating-container">
+							<div class="stars" id="starRating">
+								<span class="star" data-rating="1">★</span>
+								<span class="star" data-rating="2">★</span>
+								<span class="star" data-rating="3">★</span>
+								<span class="star" data-rating="4">★</span>
+								<span class="star" data-rating="5">★</span>
+							</div>
+							<span id="ratingText">(No rating selected)</span>
+						</div>
+						<input type="hidden" id="rating" name="rating" required>
+					</div>
+					
+					<div class="form-group">
+						<label>Which products have you purchased? (Check all that apply):</label>
+						<div class="checkbox-group">
+							<div class="checkbox-item">
+								<input type="checkbox" id="capybara" name="products" value="capybara">
+								<label for="capybara">Capybara Plush</label>
+							</div>
+							<div class="checkbox-item">
+								<input type="checkbox" id="shark" name="products" value="shark">
+								<label for="shark">Shark Plush</label>
+							</div>
+							<div class="checkbox-item">
+								<input type="checkbox" id="monkey" name="products" value="monkey">
+								<label for="monkey">Monkey Plush</label>
+							</div>
+							<div class="checkbox-item">
+								<input type="checkbox" id="none" name="products" value="none">
+								<label for="none">None yet</label>
+							</div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label for="comments">Your Feedback: <span class="required">*</span></label>
+						<textarea id="comments" name="comments" placeholder="Please share your thoughts, suggestions, or concerns..." required></textarea>
+					</div>
+					
+					<div class="form-group">
+						<label for="improvements">What can we improve?</label>
+						<textarea id="improvements" name="improvements" placeholder="Any suggestions for how we can make your experience better?"></textarea>
+					</div>
+					
+					<div class="button-container">
+						<button type="button" class="purchase-button" onclick="clearForm()">Clear Form</button>
+						<button type="submit" class="feedback-button">Submit Feedback</button>
+					</div>
+				</form>
+				
+				<div class="thank-you" id="thankYouMessage">
+					<p>Thank you for your feedback! We appreciate your input and will review it carefully.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="bottom-bar">
+		Softest Toys In The World
+	</div>
+</div>
+
+<script>
+// Star rating functionality
+const stars = document.querySelectorAll('.star');
+const ratingInput = document.getElementById('rating');
+const ratingText = document.getElementById('ratingText');
+
+stars.forEach((star, index) => {
+    star.addEventListener('click', () => {
+        const rating = index + 1;
+        ratingInput.value = rating;
+        
+        // Update star display
+        stars.forEach((s, i) => {
+            if (i < rating) {
+                s.classList.add('active');
+            } else {
+                s.classList.remove('active');
+            }
+        });
+        
+        // Update rating text
+        const ratingTexts = ['Terrible', 'Poor', 'Average', 'Good', 'Excellent'];
+        ratingText.textContent = `(${ratingTexts[rating - 1]})`;
+    });
+    
+    star.addEventListener('mouseover', () => {
+        const rating = index + 1;
+        stars.forEach((s, i) => {
+            if (i < rating) {
+                s.style.color = '#f39c12';
+            } else {
+                s.style.color = '#bdc3c7';
+            }
+        });
+    });
+});
+
+document.getElementById('starRating').addEventListener('mouseleave', () => {
+    const currentRating = parseInt(ratingInput.value) || 0;
+    stars.forEach((s, i) => {
+        if (i < currentRating) {
+            s.style.color = '#f39c12';
+        } else {
+            s.style.color = '#bdc3c7';
+        }
+    });
+});
+
+// Form submission
+document.getElementById('feedbackForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    // Collect form data
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+    
+    // Get selected products
+    const selectedProducts = Array.from(document.querySelectorAll('input[name="products"]:checked'))
+        .map(cb => cb.value);
+    data.products = selectedProducts;
+    
+    // Hide form and show thank you message
+    document.getElementById('feedbackForm').style.display = 'none';
+    document.getElementById('thankYouMessage').style.display = 'block';
+    
+    // Auto-reset after 3 seconds
+    setTimeout(() => {
+        clearForm();
+        document.getElementById('feedbackForm').style.display = 'block';
+        document.getElementById('thankYouMessage').style.display = 'none';
+    }, 3000);
+});
+
+// Clear form function
+function clearForm() {
+    document.getElementById('feedbackForm').reset();
+    ratingInput.value = '';
+    ratingText.textContent = '(No rating selected)';
+    stars.forEach(star => {
+        star.classList.remove('active');
+        star.style.color = '#bdc3c7';
+    });
+}
+</script>
+
+</body>
+</html>
