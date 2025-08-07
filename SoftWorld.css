@@ -985,8 +985,8 @@ input:focus {
 }
 
 .contact-container {
-    max-width: 850px;
-max-height: 300px;
+    max-width: 80%;
+max-height: 40%;
     margin: 50px auto;
     background: #ADD8E6;
     padding: 30px;
@@ -1524,6 +1524,7 @@ color: #004172;
     color: #666;
     font-style: italic;
 }
+
 
 
 
