@@ -1207,6 +1207,15 @@ clear: both;
 float: left;
 }
 
+#group-pic2 {
+    border-radius: 12px;
+    max-width: 40%;
+    box-shadow: 0 4px 10px #004172;
+clear: both; 
+    margin: 30px auto; 
+float: right;
+}
+
 .register-2 {
     background: white;
     padding: 30px;
@@ -1519,6 +1528,7 @@ color: #004172;
     color: #666;
     font-style: italic;
 }
+
 
 
 
