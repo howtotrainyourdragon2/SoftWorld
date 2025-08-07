@@ -1199,13 +1199,12 @@ max-height: 20%;
 
 #group-pic {
     border-radius: 12px;
-    max-width: 60%;
+    max-width: 40%;
     box-shadow: 0 4px 10px #004172;
-    margin: 30px auto;
-	  clear: both; 
+clear: both; 
     margin: 30px auto; 
     display: block;
-    display: block; 
+float: left;
 }
 
 .register-2 {
@@ -1520,6 +1519,7 @@ color: #004172;
     color: #666;
     font-style: italic;
 }
+
 
 
 
