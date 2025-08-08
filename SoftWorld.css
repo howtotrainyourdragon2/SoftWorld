@@ -1387,6 +1387,11 @@ max-height: 20%;
     line-height: 1.5;
 }
 
+.fa-brands{
+	font-size: 30px;
+	color: #004172;
+}
+	
 
 @media (max-width: 768px) {
     .enhanced-product-container {
@@ -1503,6 +1508,7 @@ max-height: 20%;
     color: #666;
     font-style: italic;
 }
+
 
 
 
