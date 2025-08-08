@@ -1199,13 +1199,13 @@ max-height: 20%;
 
 #group-pic{
     border-radius: 12px;
-    max-width: 40%;
+    max-width: 70%;
     box-shadow: 0 4px 10px #004172;
 }
 
 #group-pic2{
     border-radius: 12px;
-    max-width: 30%;
+    max-width: 50%;
     box-shadow: 0 4px 10px #004172;
 }
 
@@ -1521,6 +1521,7 @@ color: #004172;
     color: #666;
     font-style: italic;
 }
+
 
 
 
