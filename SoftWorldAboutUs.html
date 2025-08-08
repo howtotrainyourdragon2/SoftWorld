@@ -336,6 +336,133 @@ const observer = new IntersectionObserver(entries => {
 animatedElements.forEach(element => {
     observer.observe(element);
 });
+
+        class PlushCarousel {
+            constructor() {
+                this.track = document.getElementById('carouselTrack');
+                this.prevBtn = document.getElementById('prevBtn');
+                this.nextBtn = document.getElementById('nextBtn');
+                this.progressDots = document.querySelectorAll('.progress-dot');
+                
+                this.currentSlide = 0;
+                this.totalSlides = 3; // Number of slide groups
+                this.slideWidth = 0;
+                
+                this.init();
+            }
+            
+            init() {
+                this.calculateSlideWidth();
+                this.bindEvents();
+                this.updateButtons();
+                
+                // Auto-resize handler
+                window.addEventListener('resize', () => {
+                    this.calculateSlideWidth();
+                });
+            }
+            
+            calculateSlideWidth() {
+                // Calculate the width needed to show one complete group
+                const container = document.querySelector('.carousel-container');
+                this.slideWidth = container.offsetWidth * 0.85; // Show partial next slide
+            }
+            
+            bindEvents() {
+                this.prevBtn.addEventListener('click', () => this.previousSlide());
+                this.nextBtn.addEventListener('click', () => this.nextSlide());
+                
+                // Progress dot navigation
+                this.progressDots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => this.goToSlide(index));
+                });
+                
+                // Touch/swipe support
+                let startX = 0;
+                let isDragging = false;
+                
+                this.track.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                    isDragging = true;
+                });
+                
+                this.track.addEventListener('touchmove', (e) => {
+                    if (!isDragging) return;
+                    e.preventDefault();
+                });
+                
+                this.track.addEventListener('touchend', (e) => {
+                    if (!isDragging) return;
+                    
+                    const endX = e.changedTouches[0].clientX;
+                    const diff = startX - endX;
+                    
+                    if (Math.abs(diff) > 50) {
+                        if (diff > 0) {
+                            this.nextSlide();
+                        } else {
+                            this.previousSlide();
+                        }
+                    }
+                    
+                    isDragging = false;
+                });
+            }
+            
+            goToSlide(slideIndex) {
+                this.currentSlide = Math.max(0, Math.min(slideIndex, this.totalSlides - 1));
+                this.updateCarousel();
+            }
+            
+            nextSlide() {
+                if (this.currentSlide < this.totalSlides - 1) {
+                    this.currentSlide++;
+                    this.updateCarousel();
+                }
+            }
+            
+            previousSlide() {
+                if (this.currentSlide > 0) {
+                    this.currentSlide--;
+                    this.updateCarousel();
+                }
+            }
+            
+            updateCarousel() {
+                const translateX = -this.currentSlide * this.slideWidth;
+                this.track.style.transform = `translateX(${translateX}px)`;
+                
+                this.updateButtons();
+                this.updateProgressDots();
+            }
+            
+            updateButtons() {
+                this.prevBtn.classList.toggle('disabled', this.currentSlide === 0);
+                this.nextBtn.classList.toggle('disabled', this.currentSlide === this.totalSlides - 1);
+            }
+            
+            updateProgressDots() {
+                this.progressDots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === this.currentSlide);
+                });
+            }
+        }
+        
+        // Initialize carousel when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new PlushCarousel();
+        });
+        
+        // Add some interactive animations
+        document.querySelectorAll('.plush-main').forEach(main => {
+            main.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px) scale(1.02)';
+            });
+            
+            main.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
 </script>
 
 </body>
