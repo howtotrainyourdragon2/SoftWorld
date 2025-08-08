@@ -1197,22 +1197,16 @@ max-height: 20%;
     margin-right: 40px;
 }
 
-#group-pic animate content{
+#group-pic{
     border-radius: 12px;
     max-width: 40%;
     box-shadow: 0 4px 10px #004172;
-clear: both; 
-    margin: 30px auto; 
-    display: block;
-float: left;
 }
 
-#group-pic2 animate content{
+#group-pic2{
     border-radius: 12px;
-    max-width: 40%;
+    max-width: 30%;
     box-shadow: 0 4px 10px #004172;
-clear: both; 
-    margin: 30px auto; 
 float: right;
 }
 
@@ -1528,6 +1522,7 @@ color: #004172;
     color: #666;
     font-style: italic;
 }
+
 
 
 
