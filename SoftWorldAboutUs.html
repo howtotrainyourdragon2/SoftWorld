@@ -1,197 +1,236 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soft World</title>
+	<title>Soft World</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		
+		body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		}
+		.animate-content {
+			opacity: 0;
+			transform: translateY(30px) scale(0.95);
+			transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+		}
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-6GgVTXD1PKX7wJf4yF5u9oHtsQ5eKmW+ZlgF9q9c7tQyDg4Gg2KxJl5ix8Z2gTg9H2PrMlylfZfHk4L5mJ3Nsg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		.animate-content.show {
+			opacity: 1;
+			transform: translateY(0) scale(1);
+		}
 
-    <style>
-        body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        .animate-content {
-            opacity: 0;
-            transform: translateY(30px) scale(0.95);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-        }
-        .animate-content.show {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-        }
-        .slider-wrapper {
-            opacity: 0;
-            transform: translateY(30px) scale(0.95);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-        }
-        .slider-wrapper.show {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-        }
-        @media (max-width: 768px) {
+		
+		.slider-wrapper {
+			opacity: 0;
+			transform: translateY(30px) scale(0.95);
+			transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+		}
+
+		.slider-wrapper.show {
+			opacity: 1;
+			transform: translateY(0) scale(1);
+		}
+
+		 @media (max-width: 768px) {
             .about-us {
                 width: 90%;
                 float: none;
                 margin: 20px auto;
             }
+
+
+
+
+            
             .founders-des td {
                 display: block;
                 width: 100%;
             }
         }
-    </style>
-
-    <link href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorld.css" rel="stylesheet"/>
+	</style>
+	
+	<link href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorld.css" rel="stylesheet"/>
+	
 </head>
 <body>
 <div class="page-container">
 
-    <div class="navbar">
-        <a style="color: white; font-size: 57px; font-weight: bold; margin-right: 30px;" href="https://howtotrainyourdragon2.github.io/SoftWorld/index.html">SW</a>
-        <a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldProduct.html">Products</a>
-        <a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldContactUs.html">Contact Us</a>
-        <a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldAboutUs.html">About Us</a>
-        <div class="nav-right">
-            <a href="SoftWorldCart.html" class="cart-button">
-                Cart<span id="cart-badge" class="cart-badge hidden">0</span>
-            </a>
-            <input id="search" type="text" placeholder="Search">
-        </div>
-    </div>
+	<div class="navbar">
+		<a style="color: white; font-size: 57px; font-weight: bold; margin-right: 30px;"
+		href="https://howtotrainyourdragon2.github.io/SoftWorld/index.html">SW</a>
+		<a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldProduct.html">Products</a>
+		<a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldContactUs.html">Contact Us</a>
+		<a href="https://howtotrainyourdragon2.github.io/SoftWorld/SoftWorldAboutUs.html">About Us</a>
 
-    <div class="content">
+		<div class="nav-right">
+			<a href="SoftWorldCart.html" class="cart-button">
+               		 Cart<span id="cart-badge" class="cart-badge hidden">0</span>
+           		 </a>
+			<input id="search" type="text" placeholder="Search">
+		</div>
+	</div>
 
-        <div class="slider-wrapper animate-content">
-            <div class="slider">
-                <img id="slide-1" src="https://howtotrainyourdragon2.github.io/SoftWorld/SharkMain.png" alt="IKEA Shark"/>
-                <img id="slide-2" src="https://howtotrainyourdragon2.github.io/SoftWorld/CapyMain.png" alt="Capybara"/>
-                <img id="slide-3" src="https://howtotrainyourdragon2.github.io/SoftWorld/MonkeyMain.jpg" alt="Monkey"/>
-            </div>
-            <div class="slider-nav">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
-            </div>
-        </div>
-
-
-        <div class="about-us animate-content">
-            <h1>Our Story</h1>
-            <p>
-                Our company, Soft World, dates back to 16 June 2025. 
-                We offer customers a range of soft toys, with our main target being kids aged from 3–12. 
-                We are in the toy manufacturing industry, providing high quality, safe, and emotionally comforting soft toys for children and collectors alike. 
-                Having a website is a competitive necessity to stay in the market, enabling us to reach a wider audience beyond local retail stores. 
-                This convenience will help attract more customers, and reviews are easier to track compared to physical retail, allowing us to improve our products and services.
-            </p>
-            <button>View Our Best Selling Products!</button>
-        </div>
-
-
-        <div class="group-pic animate-content">
-            <img id="shark-us" src="SharkyUs.png" alt="Shark plush with team"/>
-        </div>  
-
-
-        <div class="side-us animate-content">
-            <h2>Customer Reviews</h2>
-            <img id="capy-us" src="CapyUs.png" alt="Capybara plush"/>
-            <table class="reviews animate-content">
-                <tr><td><img id="review1" src="review1.png" alt="Customer review 1"></td></tr>
-                <tr><td><img id="review2" src="review2.png" alt="Customer review 2"></td></tr>
-                <tr><td><img id="review3" src="review3.png" alt="Customer review 3"></td></tr>
-            </table>
-            <a href="SoftWorldFeedback.html" class="review-button">Leave a Review</a>
-        </div>
-
-
-        <div class="founders animate-content">
-            <h2>Meet The Founders of SoftWorld</h2>
-            <table class="founder-des">
-                <tr>
-                    <td>
-                        <p><strong>Koh Jun Kang</strong> created the Home page with images of our top selling products and a brief history. The home page also includes our services such as Repair, Washing, and Refunds, plus our FAQ section.</p>
-                    </td>
-                    <td>
-                        <p><strong>Seth Su Jun Yi</strong> created the product catalogue page displaying our best selling 3 products: shark, monkey, and capybara. The page includes an add-to-cart button, care instructions, material info, and customer reviews.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p><strong>Cheam Zhi Yi</strong> created the Cart and Feedback page. The cart shows product quantity, subtotal, and name. The checkout section shows tax, subtotal, total cost, and a checkout button. The feedback form lets customers share reviews.</p>
-                    </td>
-                    <td>
-                        <p><strong>Yak Jing Xuan Ophelia</strong> created the Contact Us and About Us pages. Contact Us contains a form requiring your name, email, and message, with a thank-you page after submission. The About Us page provides product info, history, contact info, founders, and latest news.</p>
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td><img id="group-pic" src="grouppic.png" alt="SoftWorld founders group photo"></td>
-                    <td><img id="group-pic2" src="grouppic2.png" alt="SoftWorld founders second group photo"></td>
-                </tr>
-            </table>
-        </div>
-
-        <!-- Social Media Icons -->
-        <div class="icons">
-            <a href="https://www.instagram.com/assphelia/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/en/"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
-        </div>
+	<div class="content">
+<div class="slider-wrapper animate-content">
+	<div class="slider">
 		
-        <div class="register-2 animate-content">
-            <h2 class="big-head">Want To Be Part Of Our Softie Family?</h2>
-            <p class="small-head">Sign up to be a Softie member and get discounts and member benefits!</p>
-            <form class="register">
-                <table>
-                    <tr>
-                        <td>First Name</td>
-                        <td><input type="text" name="first-name" required></td>
-                        <td>Last Name</td>
-                        <td><input type="text" name="last-name" required></td>
-                    </tr>
-                    <tr>
-                        <td>Phone Number</td>
-                        <td><input type="text" name="phone" placeholder="+65" required><button id="yak">Get OTP</button></td>
-                        <td>Email</td>
-                        <td><input type="email" name="email" placeholder="@gmail.com" required></td>
-                    </tr>
-                    <tr>
-                        <td>Gender</td>
-                        <td><input type="radio" name="gender" value="male" id="male"><label for="male">Male</label></td>
-                        <td><input type="radio" name="gender" value="female" id="female"><label for="female">Female</label></td>
-                    </tr>
-                    <tr>
-                        <td>Date</td>
-                        <td><input id="date" type="date" name="date"></td>
-                    </tr>
-                    <tr>
-                        <td>Password</td>
-                        <td><input type="password" name="password" required></td>
-                    </tr>
-                    <tr>
-                        <td>Confirm Password</td>
-                        <td><input type="password" name="confirm-password" required></td>
-                    </tr>
-                </table>
-                <button id="yak2">Join Our Family Now!</button>
-            </form>
-        </div>
+		<img id="slide-1" src="https://howtotrainyourdragon2.github.io/SoftWorld/SharkMain.png" alt="IKEA Shark"/>
+		<img id="slide-2" src="https://howtotrainyourdragon2.github.io/SoftWorld/CapyMain.png" alt="Capybara"/>
+		<img id="slide-3" src="https://howtotrainyourdragon2.github.io/SoftWorld/MonkeyMain.jpg" alt="Monkey"/>
+	</div>
+	<div class="slider-nav">
+		<a href="slide-1"></a>
+		<a href="slide-2"></a>
+		<a href="slide-3"></a>
+	</div>
+</div>
+        <div class="about-us animate-content" action="SoftWorldContactUs.html" method="get">
+		
+		<h1>Our story</h1>
+		<p>Our company, Soft World, is which date back to 16 June 2025. 
+		Offers customers a range of soft toys and our main target customers are kids aged from 3-12. 
+		The industry that we are in is toy manufacturing and the company provides high quality, 
+		safe and emotionally comforting soft toys for children and collectors alike. 
+		As under the toy manufacturing industry all has a website to sell their toys, 
+		having a website is a competitive necessity to stay in competition with the other companies. 
+		This website will enable us to reach a wider market as it is not restricted to locals 
+		that only can buy in the retail store. This convenience will allow us to attract more 
+		customers. Reviews are more easily kept tracked as compared to retail, 
+		this allows us to improve on our product and services.</p>
+			 <button>View Our Best Selling Products!</button>
+		
+	</div>
 
-        <div class="bottom-bar">
-            Softest Toys In The World
-        </div>
-    </div>
+<div class="group-pic animate-content">
+			<img id="shark-us" src="SharkyUs.png"/>
+			
+		</div>	
+
+<div class="side-us animate-content">
+	<h1>Customer reviews</h1>
+	<img id="capy-us" src="CapyUs.png">
+			<table class="reviews animate-content">
+		<tr>
+		<td><img id="review1"src="review1.png"></td>
+		</tr>
+		<tr>
+		<td><img id="review2" src="review2.png"></td>
+		<td>
+                </tr>
+		<tr>
+		<td><img id="review3" src="review3.png"></td>
+		</tr>
+		</div>
+		</table>
+	<a href="SoftWorldFeedback.html" class="review-button">Leave a review</a>
+
+
+		
 </div>
 
-<!-- Intersection Observer Script -->
+<div class="founders animate-content">
+    <p>Meet The Founders Of SoftWorld</p>
+    
+    <table class="founder-des">
+        <tr>
+            <td><p>Koh Jun Kang, 
+            created the Home page equipped with images of 
+            our top selling products and a 
+            brief introduction of our history. 
+            The home page also includes our 
+            Services such as Repair, Washing and refunds. 
+            Last but not least our FAQ to answer the 
+            common questions customers tend to ask</p></td>
+            <td><p>Seth Su Jun Yi, 
+            created the product catalogue page displaying our 
+            best selling 3 products the shark, monkey and capybara. 
+            The page is equipped with an add to cart button, 
+            instructions on how to care for the product and 
+            the material information. At the side there are also 
+            reviews for customers to read. Each product is equipped with 
+            3 images so customers can analyze from many angles</p></td>
+        </tr>
+        <tr>
+            <td><p>Cheam Zhi Yi, created the Cart and Feedback page. 
+            Cart page, when items are added into the cart it shows
+            the quantity, subtotal and the name of the product. 
+            At the check-out section shows the tax, subtotal, total cost 
+            and the check out button. For the feedback form it allows customers 
+            to give us reviews so we can improve on our products
+            and services to provide top customer service</p></td>
+            <td><p>Yak Jing Xuan Ophelia, created contact us and about us page.
+            Contact us consists of a form where you would need to
+            provide your name, email and the message you want to send after clicking
+            on the send message button it will direct you 
+            to a page, thanking you and a button to bring you back to the
+            home page. The about us page provides customers information
+            about our products, history, contact information,
+            founders and the latest news.</p></td>
+        </tr>
+    </table>
+	<table>
+		<tr>
+	<td><img id="group-pic" src="grouppic.png"></td>
+<td><img id="group-pic2" src="grouppic2.png"></td>
+			</tr>
+	</table>
+</div>
+
+	<div class="icons">
+	<a href="https://www.instagram.com/assphelia/"><i class="fa-brands fa-instagram"></i></a>
+	<a href="https://www.tiktok.com/en/"><i class="fa-brands fa-tiktok"></i></a>
+	<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+	<a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+</div>
+	
+	<div class="register-2 animate-content">
+	<h1 class="big-head">Want To Be Part Of Our Softie Family?</h1>
+	<p class="small-head">sign up to be a softie member and get discounts and member benefits!</p>
+	<form class="register">
+	<table>
+	<tr>
+	<td>First Name<td>
+	<td><input type="text" name="name" placeholder="" required></td>
+	<td>Last Name<td>
+	<td><input type="text" name="name" placeholder="" required></td>
+	</tr>
+	<tr>
+	<td>Phone number<td>
+	<td><input type="text" name="Phone number" placeholder="+65" required><button id="yak">Get OTP</button></td>
+	<td>Email<td>
+	<td><input type="text" name="Email" placeholder="@gmail.com" required></td>
+	</tr>
+	<tr>
+	<td>Gender</td>
+    <label><td><input type="radio" name="gender" value="male" />Male</td></label>
+    <label><td><input type="radio" name="gender" value="female" />Female</td></label>
+	</tr>
+	<tr>
+	<td>Date<td>
+	<td><input id="date" type="Date"></td>
+	</tr>
+	<td>Password<td>
+	<td><input type="text" name="Password" placeholder="" required></td>
+	</tr>
+	<td>Confrim Password<td>
+	<td><input type="text" name="Confrim Password" placeholder="" required></td>
+	</tr>
+	</table>
+		<button id="yak2">Join Our Family Now!</button>
+	</form>
+	</div>
+
+	
+<div class="bottom-bar">
+Softest Toys In The World
+</div>
+
+
+</div>
 <script>
 const animatedElements = document.querySelectorAll('.animate-content, .slider-wrapper');
+
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -199,10 +238,14 @@ const observer = new IntersectionObserver(entries => {
             observer.unobserve(entry.target);
         }
     });
-}, { threshold: 0.2 });
-animatedElements.forEach(element => observer.observe(element));
+}, {
+    threshold: 0.2
+});
+
+animatedElements.forEach(element => {
+    observer.observe(element);
+});
 </script>
 
 </body>
 </html>
-
