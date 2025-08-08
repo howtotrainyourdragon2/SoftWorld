@@ -372,12 +372,11 @@ animatedElements.forEach(element => {
                 this.prevBtn.addEventListener('click', () => this.previousSlide());
                 this.nextBtn.addEventListener('click', () => this.nextSlide());
                 
-                // Progress dot navigation
+
                 this.progressDots.forEach((dot, index) => {
                     dot.addEventListener('click', () => this.goToSlide(index));
                 });
                 
-                // Touch/swipe support
                 let startX = 0;
                 let isDragging = false;
                 
@@ -447,13 +446,12 @@ animatedElements.forEach(element => {
                 });
             }
         }
-        
-        // Initialize carousel when DOM is loaded
+
         document.addEventListener('DOMContentLoaded', () => {
             new PlushCarousel();
         });
         
-        // Add some interactive animations
+
         document.querySelectorAll('.plush-main').forEach(main => {
             main.addEventListener('mouseenter', function() {
                 this.style.transform = 'translateY(-8px) scale(1.02)';
