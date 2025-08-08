@@ -1386,8 +1386,9 @@ max-height: 20%;
 }
 
 .fa-brands {
-	font-size: 30px;
+	font-size: 50px;
 	color: #004172;
+	float: right;
 }
 .social-pic {
 	max-width: 40px;
@@ -1512,6 +1513,7 @@ max-height: 20%;
     color: #666;
     font-style: italic;
 }
+
 
 
 
