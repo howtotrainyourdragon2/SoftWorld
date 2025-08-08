@@ -1504,14 +1504,14 @@ max-height: 20%;
     font-style: italic;
 }
 
-.Touch-us {
+.touch-us {
     text-align: center;
     padding:  48 px 32 px;
     max-width: 800px;
     margin: 0 auto 48 px;
 }
 
-.Touch-us h1 {
+.touch-us h1 {
     font-size: 48px;
     font-weight: 300;
     color:  #004172;
@@ -1519,7 +1519,7 @@ max-height: 20%;
     letter-spacing: -0.5px;
 }
 
-.Touch-us h3 {
+.touch-us h3 {
     font-size: 20px;
     font-weight: 400;
     color:  #004172;
@@ -1595,17 +1595,6 @@ max-height: 20%;
     transform: scale(1.02);
 }
 
-    .Touch-us {
-        padding: 2rem 1rem;
-    }
-    
-    .Touch-us h1 {
-        font-size: 2rem;
-    }
-    
-    .Touch-us h3 {
-        font-size: 1rem;
-    }
     
     .icons {
         gap: 1rem;
@@ -1621,6 +1610,7 @@ max-height: 20%;
     #Socials {
         max-width: 250px;
     }
+
 
 
 
