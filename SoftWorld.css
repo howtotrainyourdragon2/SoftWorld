@@ -694,11 +694,8 @@ body {
     text-align: center;
 }
 
-.caption {
-    color: #004172;
-}
 
-.oph {
+.ophe caption{
     font-size: 20px;
     color: #004172;
 }
@@ -1515,6 +1512,7 @@ max-height: 20%;
     color: #666;
     font-style: italic;
 }
+
 
 
 
