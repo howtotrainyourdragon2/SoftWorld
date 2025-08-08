@@ -1556,7 +1556,7 @@ max-height: 20%;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Specific social media colors on hover */
+
 .icons a[href*="instagram"]:hover {
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
     color: white;
@@ -1579,6 +1579,49 @@ max-height: 20%;
     background: #1da1f2;
     color: white;
     border-color: #1da1f2;
+
+	#Socials {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#Socials:hover {
+    transform: scale(1.02);
+}
+
+    .Touch-us {
+        padding: 2rem 1rem;
+    }
+    
+    .Touch-us h1 {
+        font-size: 2rem;
+    }
+    
+    .Touch-us h3 {
+        font-size: 1rem;
+    }
+    
+    .icons {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .icons a {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    #Socials {
+        max-width: 250px;
+    }
+
 
 
 
