@@ -70,7 +70,7 @@ body {
 
 .content {
     flex: 1;
-    background-color: #B3D4CA;
+    background-color: #84aeba;
 }
 
 .bottom-bar {
@@ -1513,6 +1513,7 @@ max-height: 20%;
     color: #666;
     font-style: italic;
 }
+
 
 
 
