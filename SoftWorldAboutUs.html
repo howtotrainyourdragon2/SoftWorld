@@ -205,7 +205,47 @@
     </table>
 </div>
 
+   <div class="news-carousel">
+        <div class="carousel-wrapper">
+            <div class="carousel-track" id="track">
+                <div class="news-item">
+                    <h2 class="news-title">New Item Drop</h2>
+                    <p class="news-summary">new item dropping in December! Run dont walk and get your hands cuteness overload</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
 
+                <div class="news-item">
+                    <h2 class="news-title">Im coming home soon!</h2>
+                    <p class="news-summary">our beloved monkey soft toy is sadly out of stock new stock coming soon!</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+
+                <div class="news-item">
+
+                    <h2 class="news-title">Black Friday Sale!</h2>
+                    <p class="news-summary">Get your favourite toys at 50% off this friday!</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+
+                <div class="news-item">
+
+                    <h2 class="news-title">be a softie</h2>
+                    <p class="news-summary">Now we have membership register to be a part of our Softie family and get discount with every purchase</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="navi-button prev" id="prevBtn">‹</button>
+        <button class="navi-button next" id="nextBtn">›</button>
+
+        <div class="indicators">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+        </div>
+    </div>
 	
 	<div class="register-2 animate-content">
 	<h1 class="big-head">Want To Be Part Of Our Softie Family?</h1>
@@ -268,8 +308,47 @@ const observer = new IntersectionObserver(entries => {
 animatedElements.forEach(element => {
     observer.observe(element);
 });
+              let currentSlide = 0;
+        const totalSlides = 4;
+        const track = document.getElementById('track');
+        const dots = document.querySelectorAll('.dot');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        function updateCarousel() {
+            const translateX = -currentSlide * 100;
+            track.style.transform = `translateX(${translateX}%)`;
             
-       
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+
+
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => goToSlide(index));
+        });
+
+
+        setInterval(nextSlide, 5000);
 </script>
 
 </body>
