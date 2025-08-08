@@ -1397,7 +1397,119 @@ max-height: 20%;
 	float: right;
 }
 	
-	
+			        .news-carousel {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ADD8E6;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel-wrapper {
+            overflow: hidden;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .news-item {
+            min-width: 100%;
+            padding: 30px;
+        }
+
+
+        .news-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .news-summary {
+		font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .read-more {
+            background: #004172;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .read-more:hover {
+            background: #FFFF;
+			color: #004172
+        }
+
+        .navi-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: white;
+            border: 1px solid #ddd;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .navi-button:hover {
+            background: #f0f0f0;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .indicators {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ddd;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background: #007bff;
+        }
+
+        @media (max-width: 600px) {
+            .news-item {
+                padding: 20px;
+            }
+            
+            .news-title {
+                font-size: 20px;
+            }
+        }
 
 @media (max-width: 768px) {
     .enhanced-product-container {
@@ -1514,6 +1626,7 @@ max-height: 20%;
     color: #666;
     font-style: italic;
 }
+
 
 
 
