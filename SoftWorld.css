@@ -1506,25 +1506,22 @@ max-height: 20%;
 
 .touch-us {
     text-align: center;
-    padding:  48 px 32 px;
-    max-width: 800px;
-    margin: 0 auto 48 px;
+    padding: 48px 32px;
+    margin: 0 auto 48px;
 }
 
 .touch-us h1 {
     font-size: 48px;
     font-weight: 300;
-    color:  #004172;
+    color: #004172;
     margin-bottom: 16px;
-    letter-spacing: -0.5px;
 }
 
 .touch-us h3 {
     font-size: 20px;
-    font-weight: 400;
-    color:  #004172;
-    margin: 0;
+    color: #004172;
 }
+
 
 .icons {
     display: flex;
@@ -1610,6 +1607,7 @@ max-height: 20%;
     #Socials {
         max-width: 250px;
     }
+
 
 
 
