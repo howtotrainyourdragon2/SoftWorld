@@ -148,7 +148,7 @@ body {
     display: block;
 }
 
-/* Enhanced Product Page Styles */
+
 .enhanced-product-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -1322,6 +1322,7 @@ max-height: 20%;
     clear: both; 
     width: 90%;
     margin: 50px auto;
+	margin-bottom: 70px;
 }
 
         .side-us h1 {
@@ -1514,6 +1515,7 @@ max-height: 20%;
     color: #666;
     font-style: italic;
 }
+
 
 
 
