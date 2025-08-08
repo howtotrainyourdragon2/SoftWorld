@@ -49,9 +49,9 @@ Cart<span id="cart-badge" class="cart-badge hidden">0</span>
 <span>Total:</span>
 <span id="total">$0.00</span>
       </div>
-<button class="checkout-btn" onclick="checkout()">
-        <a href="https://howtotrainyourdragon2.github.io/SoftWorld/Orderform2(purchase).html" style="text-decoration:none;" style="color:#FFFFFF;"> 
-                Proceed to Checkout</a></button>
+        
+<a href="https://howtotrainyourdragon2.github.io/SoftWorld/Orderform2(purchase).html" style="text-decoration:none; color:white;"> <button class="checkout-btn" onclick="checkout()">
+                Proceed to Checkout</button></a>
 </div>
 
   <div id="empty-cart" style="text-align: center; padding: 50px; font-size: 18px; color: #666;">
@@ -162,9 +162,7 @@ document.getElementById('total').textContent = `${total.toFixed(2)}`;
 
 function checkout() {
 const total = document.getElementById('total').textContent;
-alert(`Thank you for your order! Total: ${total}\n\nThis is a demo - no actual payment processed.`);
 
-// Clear cart
 localStorage.removeItem('softWorldCart');
 updateCartDisplay();
 updateCartBadge();
