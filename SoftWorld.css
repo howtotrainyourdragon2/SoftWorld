@@ -1510,6 +1510,268 @@ max-height: 20%;
 }
 
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f9fa;
+            overflow-x: hidden;
+        }
+
+        .products-section {
+            padding: 4rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #666;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .main-title {
+            font-size: 3.5rem;
+            font-weight: 300;
+            color: #000;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+        }
+
+        .navigation-controls {
+            display: flex;
+            gap: 0.5rem;
+            float: right;
+            margin-top: -4rem;
+        }
+
+        .nav-button {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background: #000;
+            border-color: #000;
+            color: white;
+        }
+
+        .nav-button.disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .nav-button.disabled:hover {
+            background: white;
+            border-color: #ddd;
+            color: #000;
+        }
+
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            clear: both;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+            gap: 1.5rem;
+        }
+
+        .plush-main {
+            flex: 0 0 auto;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .plush-main:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .large-main {
+            width: 440px;
+            height: 580px;
+        }
+
+        .small-main {
+            width: 320px;
+            height: 280px;
+        }
+
+        .main-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.6s ease;
+        }
+
+        .plush-main:hover .main-background {
+            transform: scale(1.05);
+        }
+
+        .main-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.4) 100%);
+        }
+
+        .main-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem;
+            color: white;
+            z-index: 2;
+        }
+
+        .main-title {
+            font-size: 1.8rem;
+            font-weight: 300;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .main-subtitle {
+            font-size: 1.1rem;
+            font-weight: 300;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        .main-category {
+            font-size: 0.9rem;
+            font-weight: 400;
+            opacity: 0.8;
+            letter-spacing: 0.5px;
+        }
+
+        .learn-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            font-weight: 400;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+        }
+
+        .plush-main:hover .learn-more {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .learn-more::after {
+            content: '→';
+            font-size: 1.1rem;
+        }
+
+        .teddy-main .main-background {
+            background-image: url('https://images.unsplash.com/photo-1530325553146-0113d8099b4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+        }
+
+        .bunny-main .main-background {
+            background-image: url('https://images.unsplash.com/photo-1589883661923-6476cb0ae9f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+        }
+
+        .shark-main .main-background {
+            background-image: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+        }
+
+        .capybara-main .main-background {
+            background-image: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+        }
+
+        .monkey-main .main-background {
+            background-image: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+        }
+
+        .progress-dots {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        .progress-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #ddd;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .progress-dot.active {
+            background: #000;
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 768px) {
+            .plush-section {
+                padding: 2rem 1rem;
+            }
+
+            .main-title {
+                font-size: 2.5rem;
+            }
+
+            .navigation-controls {
+                float: none;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .large-main {
+                width: 300px;
+                height: 400px;
+            }
+
+            .small-main {
+                width: 250px;
+                height: 220px;
+            }
+
+            .main-content {
+                padding: 1.5rem;
+            }
+
+            .main-title {
+                font-size: 1.5rem;
+            }
+        }
 
 
 
