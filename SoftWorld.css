@@ -1392,9 +1392,9 @@ max-height: 20%;
 	color: #004172;
 }
 .social-pic {
-	max-width: 40%;
-		border-radius: 10px;
-	    box-shadow: 0 4px 10px #004172;
+	max-width: 40px;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px #004172;
 }
 	
 	
@@ -1514,6 +1514,7 @@ max-height: 20%;
     color: #666;
     font-style: italic;
 }
+
 
 
 
