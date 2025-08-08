@@ -1445,24 +1445,11 @@ max-height: 20%;
     }
 
 
-.contact-section {
-    clear: both;          
-    margin: 50px auto;    
-    width: 100%;
-    max-width: 800px;         
-    display: block;
-    text-align: center;
-color: #004172;
+.Touch-us h1{
+color:  #004172;
+}
 	
-}
 
-
-.fa-brand{
-	font-size: 50px;
-	color:  #004172;
-	padding: 10px;
-	float: right;
-}
 .required {
     color: #e74c3c;
 }
@@ -1521,6 +1508,7 @@ color: #004172;
     color: #666;
     font-style: italic;
 }
+
 
 
 
