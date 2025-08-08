@@ -1445,7 +1445,7 @@ max-height: 20%;
     }
 
 
-.Touch-us{
+.Touch-us {
 color:  #004172;
 }
 	
@@ -1509,13 +1509,14 @@ color:  #004172;
     font-style: italic;
 }
 
-#Socials{
+#Socials {
 	max-width: 40%;
 	float: right;
 	margin-right: 20px;
 	border-radius: 10px;
 	 box-shadow: 0 4px 10px #004172;
 }
+
 
 
 
