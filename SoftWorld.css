@@ -1518,7 +1518,6 @@ max-height: 20%;
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f8f9fa;
             overflow-x: hidden;
         }
 
@@ -1772,6 +1771,7 @@ max-height: 20%;
                 font-size: 1.5rem;
             }
         }
+
 
 
 
