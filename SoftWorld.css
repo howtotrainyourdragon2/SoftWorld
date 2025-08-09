@@ -708,6 +708,7 @@ body {
             overflow: hidden;
             float: left;
             background-color: #ADD8E6;
+	    color: #004172;
                 margin: 20px auto;
         }
 td {
@@ -1339,7 +1340,7 @@ max-height: 20%;
     font-size: 16px;
     box-shadow: 0 4px 10px #004172;
     float: left;
-    margin-left: 70px;
+    margin-left: 90px;
     margin-top: 15px;
     transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
@@ -1397,7 +1398,7 @@ max-height: 20%;
 	float: right;
 }
 	
-			        .news-carousel {
+	 .news-carousel {
             max-width: 800px;
             margin: 0 auto;
             background: #ADD8E6;
@@ -1626,6 +1627,7 @@ max-height: 20%;
     color: #666;
     font-style: italic;
 }
+
 
 
 
