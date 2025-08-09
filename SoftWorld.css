@@ -710,7 +710,6 @@ body {
             background-color: #ADD8E6;
 	    color: #004172;
 	display: flex;
-	flex: space-between;
         }
 
 td {
@@ -1643,6 +1642,7 @@ margin-right: 30px;
     color: #666;
     font-style: italic;
 }
+
 
 
 
