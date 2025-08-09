@@ -1401,7 +1401,13 @@ max-height: 20%;
 	float: right;
 	display: inline-block;
 }
-	
+
+
+.late{
+	text-align: center;
+	color: #004172;
+	font-size: 30px;
+}
 	 .news-carousel {
             max-width: 800px;
             margin: 0 auto;
@@ -1631,6 +1637,7 @@ max-height: 20%;
     color: #666;
     font-style: italic;
 }
+
 
 
 
