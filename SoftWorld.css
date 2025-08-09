@@ -1388,18 +1388,21 @@ max-height: 20%;
     line-height: 1.5;
 }
 
+.icons{
+margin-right: 30px;
+}
+
 .fa-brands {
 	font-size: 50px;
 	color: #004172;
 	float: right;
-	margin-bottom: 40px;
-	margin-right: 30px;
 }
 #Socials {
 	max-width: 20%;
 	border-radius: 10px;
 	box-shadow: 0 4px 10px #004172;
 	float: right;
+	margin-top: 60px;
 	display: inline-block;
 }
 
@@ -1639,6 +1642,7 @@ max-height: 20%;
     color: #666;
     font-style: italic;
 }
+
 
 
 
