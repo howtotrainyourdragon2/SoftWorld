@@ -709,6 +709,7 @@ body {
             float: left;
             background-color: #ADD8E6;
 	    color: #004172;
+	 margin-bottom: 50px;
         }
 
 td {
@@ -1639,6 +1640,7 @@ margin-right: 100px;
     color: #666;
     font-style: italic;
 }
+
 
 
 
