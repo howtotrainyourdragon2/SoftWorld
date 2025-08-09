@@ -709,8 +709,8 @@ body {
             float: left;
             background-color: #ADD8E6;
 	    color: #004172;
-	 margin-bottom: 50px;
-	 margin-left: 20px;
+	display: flex;
+	flex: space-between;
         }
 
 td {
@@ -1643,6 +1643,7 @@ margin-right: 30px;
     color: #666;
     font-style: italic;
 }
+
 
 
 
