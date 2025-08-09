@@ -710,6 +710,8 @@ body {
             background-color: #ADD8E6;
 	    color: #004172;
                 margin: 20px auto;
+	 display: inline-block;
+	 
         }
 td {
     padding: 10px;
@@ -1390,12 +1392,14 @@ max-height: 20%;
 	font-size: 50px;
 	color: #004172;
 	float: right;
+	display: block;
 }
 #Socials {
 	max-width: 20%;
 	border-radius: 10px;
 	box-shadow: 0 4px 10px #004172;
 	float: right;
+	display: inline-block;
 }
 	
 	 .news-carousel {
@@ -1627,6 +1631,7 @@ max-height: 20%;
     color: #666;
     font-style: italic;
 }
+
 
 
 
