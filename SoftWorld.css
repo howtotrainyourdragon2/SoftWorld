@@ -1386,16 +1386,61 @@ max-height: 20%;
     line-height: 1.5;
 }
 
+@media (max-width: 768px) {
+    .contact-icons-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+
+ .icons {
+        align-self: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+	     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-width: 200px;
+    }
+
+	.icons a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+	.icons a:hover {
+    transform: scale(1.1);
+}
+
+
+.contact-icons-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.Contact-section {
+    flex: 1;
+    min-width: 0;
+}
 .fa-brands {
 	font-size: 50px;
 	color: #004172;
 	float: right;
+	font-size: 35px;
 }
 #Socials {
 	max-width: 20%;
 	border-radius: 10px;
 	box-shadow: 0 4px 10px #004172;
 	float: right;
+	max-width: 120px;
 }
 	
 	 .news-carousel {
@@ -1627,6 +1672,7 @@ max-height: 20%;
     color: #666;
     font-style: italic;
 }
+
 
 
 
