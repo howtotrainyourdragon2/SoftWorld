@@ -1401,7 +1401,7 @@ margin-right: 100px;
 	border-radius: 10px;
 	box-shadow: 0 4px 10px #004172;
 	float: right;
-	margin-top: 60px;
+	margin-right: -20px;
 	display: flex;
 	flex: space-between;
 }
@@ -1642,6 +1642,7 @@ margin-right: 100px;
     color: #666;
     font-style: italic;
 }
+
 
 
 
