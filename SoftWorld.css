@@ -701,7 +701,6 @@ body {
 }
 
  .ophe {
-	   display: flex;
             border-collapse: separate;
             border-spacing: 0;
             box-shadow: 0px 8px 12px #004172;
@@ -1642,6 +1641,7 @@ margin-right: 100px;
     color: #666;
     font-style: italic;
 }
+
 
 
 
